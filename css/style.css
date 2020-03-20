@@ -1,0 +1,49 @@
+/*Add CSS styles here*/
+body {
+	font-family: proxima-nova, sans-serif;
+	background-color: black;
+	color: white;
+}
+
+div.title {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 50px;
+	margin-top: 100px;
+}
+
+div.title h1 {
+	font-size: 64px;
+	text-align: center;
+	margin: 0.5em 0;
+	text-decoration: underline;
+}
+
+div.title h2 {
+	font-size: 24px;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.raster img {
+	width: 100%;
+	height:auto;
+}
+
+a {
+	color: white;
+}
+
+p {
+	font-size: 18px;
+}
+
+.attribution {
+	text-align: center;
+	margin: 75px auto;
+}
+
+.attribution a {
+	font-weight: bold;
+	text-decoration: underline;
+}
