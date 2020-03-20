@@ -12,18 +12,34 @@
     </head>
 
     <body>
-
+<!--         <img src="img/header.svg" class="header"> -->
         <div class="title">
             <h1>The Forgotten Renewable</h1>
             <h2>Geothermal energy from deep below the Earth's surface could be a game changer in the transition to clean energy.</h2>
             <p class="attribution">By <a href="https://nunderwood6.github.io/portfolio/">Nick Underwood</a> | March 2020</p>
         </div>
 
+        <p>The map shows estimated temperature 500 meters below the Earth's surface. As we descend further, the temperature heats up drastically.</p>
 
-        <div class="raster">
-            <img src="img/500_transpo.png">
+        <div class="map">
+
+            <div class="colorScale">
+                <p>0°C</p>
+                <img src="img/magma.png"></img>
+                <p>230°C</p>
+            </div>
+
+            <div class="raster">
+                <img src="img/500_transpo.png">
+            </div>
+                
         </div>
 
+        <script src="lib/topojson.min.js"></script>
+       <script src="lib/d3-geo-projection.min.js"></script>
+       <script src="lib/d3.v5.min.js"></script>
+       <script src="lib/jquery-3.3.1.min.js"></script>
+       <script src="lib/d3-scale-chromatic.v1.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
