@@ -14,7 +14,7 @@ img.header {
 }
 
 div.title {
-	background-image: url("../img/header_img.jpg");
+	background-image: url("../img/header_optimized.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -151,6 +151,7 @@ p {
 	margin: auto;
 	top: 3%;
 	padding-right: 0%;
+	z-index: 2;
 }
 
 .colorScale p {
