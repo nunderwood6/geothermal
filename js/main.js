@@ -5,24 +5,33 @@ function wrapper(){
 //window width and height
 var screenRatio = window.innerWidth/window.innerHeight;
 
-var image = d3.select("img.stack").node();
-var imageRatio = image.naturalWidth/image.naturalHeight;
+// var imageRatio = image.naturalWidth/image.naturalHeight;
+var imageRatio = 1.5
 var width;
 var currentDepth = 500;
 
 if(imageRatio>screenRatio){
+  console.log("tall");
   width = 100;
-  d3.selectAll("img.stack").style("width", "100%");
+  d3.select("figure.sticky").style("width", "100vw")
+                            .style("height", 100/1.5+"vw");
 } else {
-  width = window.innerHeight * 1.5 / window.innerWidth * 100;
-  d3.selectAll("div.stack").style("width", width + "%")
-                           .style("height", width*3/2 +"%")
-                           .style("margin-left", (100-width)/2 + "%")
-                           .style("padding-top", 2+"px");
+  console.log("wide");
+  width = window.innerHeight * 1.6 / window.innerWidth * 100;
+  d3.selectAll("figure.sticky").style("width", width + "vw")
+                           .style("height", width/1.5+"vw")
+                           .style("margin", "0 auto");
+                           //.style("margin-left", (100-width)/2 + "%")
+                          // .style("padding-top", 2+"px");
 }
 
-var h = $("div.stack").height();
-var w = $("div.stack").width();
+var h = $("figure.sticky").height();
+var w = $("figure.sticky").width();
+
+var l = 0.2*w,
+t= h*0.4,
+w2 = .4*w,
+h2 = .4*h;
 
  //set top of sticky position so it's centered vertically
   var stickyH = $(".sticky").height();
@@ -35,11 +44,38 @@ console.log(width);
 
 var svg = d3.select("figure.map")
               .append("svg")
-              .attr("viewBox", `0 0 ${w} ${h}`)
-              .attr("width", width + "%")
-              .style("position","absolute")
-              .style("left", (100-width)/2 + "%")
-              .style("top", "0");
+             .attr("viewBox", `0 0 ${w} ${h}`)
+               //.attr("viewBox", `${l} ${t} ${w2} ${h2}`)             
+              .attr("width",  "100%")
+              .attr("height", "100%")
+              .style("position","absolute");
+              //.style("left", (100-width)/2 + "%")
+              //.style("top", "0");
+
+// setTimeout(function(){
+//     svg.transition().duration(5000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
+// },2000)
+
+var imageData = [500,1000,1500,2000,2500,3000]
+
+var images = svg.selectAll("image")
+                  .data(imageData)
+                  .enter()
+                  .append("image")
+                  .attr("href", d=>`img/${d}.jpg`)
+                  .attr("data-index", d=>d)
+                  .attr("class", "stack")
+                  .attr("opacity", function(d){
+                    if(d == 500) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  })
+                  .attr("x", 0)
+                  .attr("y", 0)
+                  .attr("width", w+"px")
+                  .attr("height", h+"px");
 
   //create projection
   const albers = d3.geoConicEqualArea()
@@ -115,6 +151,7 @@ var svg = d3.select("figure.map")
      						.attr("fill", "none")
      						.attr("stroke", "#fff")
      						.attr("stroke-width", 0.15)
+                .attr("vector-effect", "non-scaling-stroke")
      						.attr("opacity", 0.5);
 
       var coords = [];
@@ -162,7 +199,6 @@ var ticking = false;
 
 function onScroll(){
   latestKnownTop = target.getBoundingClientRect().top;
-  console.log("scrolled");
   requestTick();
 }
 
@@ -183,8 +219,7 @@ function update(){
   if(percent<0) percent = 0;
   currentDepth = 500 + 2500*percent;
 
-
-  d3.selectAll("img.stack").style("opacity", function(d){
+  svg.selectAll("image.stack").style("opacity", function(d){
     var depth = d3.select(this).attr("data-index");
     var currentPercent = 1 - (depth - currentDepth) /500;
     if(currentPercent < 0){

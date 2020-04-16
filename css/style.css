@@ -52,7 +52,7 @@ div.scrollContainer {
 
 article {
 	position: relative;
-	z-index: 3;
+	z-index: 4;
 }
 
 .step {
@@ -80,7 +80,7 @@ div.map{
 	position: relative;
 }
 
-div.stack {
+/*div.stack {
 	position: relative;
 }
 
@@ -96,9 +96,7 @@ div.stack img.stack {
 	left: 0;
 	top: 0;
 	opacity: 0;
-}
-
-
+}*/
 
 div.map p {
 	font-family: proxima-nova, sans-serif;
@@ -151,7 +149,7 @@ p {
 	margin: auto;
 	top: 3%;
 	padding-right: 0%;
-	z-index: 2;
+	z-index: 3;
 }
 
 .colorScale p {
