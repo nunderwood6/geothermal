@@ -58,6 +58,10 @@ article {
 .step {
 	margin: 200px auto;
 	/*text-align: center;*/
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 5px;
+	max-width: 650px;
+	padding: 5px;
 }
 
 figure.sticky {
@@ -187,9 +191,3 @@ h3 {
 
 
 }
-
-.yAxis,.depthMarker {
-	opacity: 0;
-}
-
-

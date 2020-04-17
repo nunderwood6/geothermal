@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 // Add all scripts to the JS folder
 function wrapper(){
 
@@ -47,8 +51,16 @@ var svg = d3.select("figure.map")
               //.style("left", (100-width)/2 + "%")
               //.style("top", "0");
 
-var hillshade = svg.append("image")
-                      .attr("href", "img/dark_hillshade.jpg")
+var plantsGroup = svg.append("g")
+                      .attr("class", "plantsGroup")
+                      .attr("opacity", 1);
+
+var depthGroup = svg.append("g")
+                      .attr("class", "depthGroup")
+                      .attr("opacity", 0);
+
+var hillshade = plantsGroup.append("image")
+                      .attr("href", "img/dark_hillshade_2.jpg")
                       .attr("x", 0)
                       .attr("y", 0)
                       .attr("width", w+"px")
@@ -57,20 +69,14 @@ var hillshade = svg.append("image")
 var imageData = [500,1000,1500,2000,2500,3000]
 
 
-var images = svg.selectAll("image")
+var images = depthGroup.selectAll(".stack")
                   .data(imageData)
                   .enter()
                   .append("image")
                   .attr("href", d=>`img/${d}.jpg`)
                   .attr("data-index", d=>d)
                   .attr("class", "stack")
-                  .attr("opacity", function(d){
-                    if(d == 500) {
-                      return 0;
-                    } else {
-                      return 0;
-                    }
-                  })
+                  .attr("opacity", 0)
                   .attr("x", 0)
                   .attr("y", 0)
                   .attr("width", w+"px")
@@ -116,12 +122,12 @@ var images = svg.selectAll("image")
   					.ticks(5)
   					.tickFormat(d3.format("d"));
 
-  var yAxis = svg.append("g")
+  var yAxis = depthGroup.append("g")
   					.attr("class", "yAxis")
   					.attr("transform", `translate(${w-axisMargins.right},0)`)
   					.call(yAxis);
 
-  var depthMarker = svg.append("path")
+  var depthMarker = depthGroup.append("path")
                 .attr("d", "M 0 0 L 9 6 L 0 12 z")
                 .attr("class", "depthMarker")
                 .attr("fill", "#fff")
@@ -129,8 +135,26 @@ var images = svg.selectAll("image")
                 .attr("transform", `translate(${w-axisMargins.right-6},${yScale(currentDepth)-6})`);
 
   var depthText = d3.select("figure.map").append("p")
-                            .attr("class", "depthText")
-                            .html(`Depth: <span class="depth">500</span>m`);
+                            .attr("class", "depthText depth")
+                            .html(`Depth: <span class="depthNumber">500</span>m`);
+
+  function addDiscreteListeners(){
+    
+    var stepSel = d3.selectAll(".discrete");
+
+    enterView({
+      selector: stepSel.nodes(),
+      offset: 0,
+      enter: el=> {
+        const index = d3.select(el).attr('forward');
+        updateChart[index]();
+      },
+      exit: el => {
+        let index = d3.select(el).attr('backward');
+        updateChart[index]();
+      }
+    });
+ }
 
 
    Promise.all([
@@ -146,12 +170,7 @@ var images = svg.selectAll("image")
           return b.properties["CAP_MW"] - a.properties["CAP_MW"];
       });
 
-
       var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
-      var geothermalStatesData = states.filter(function(state){
-            return geothermalStates.indexOf(state.properties["postal"]) != -1;
-      })
-      console.log(geothermalStatesData);
 
      	albers.fitExtent([[0,0],[w,h]], boxJSON);
 
@@ -175,7 +194,7 @@ var images = svg.selectAll("image")
 
 
       //postal
-      var stateLabels = svg.append("g")
+      var stateLabels = plantsGroup.append("g")
                     .selectAll(".stateLabels")
                     .data(states)
                     .enter()
@@ -188,14 +207,43 @@ var images = svg.selectAll("image")
                             return path.centroid(d)[0] - 10;
                           }
                         })
-                        .attr("y", d=>path.centroid(d)[1])
-                        .attr("fill", "#999")
-                        .attr("font-size", 6)
+                        .attr("y", function(d){
+                          if(d.properties["postal"]!="NV"){
+                            return path.centroid(d)[1];
+                          }else {
+                            return path.centroid(d)[1] + 10;
+                          }
+                        })
+                        .attr("fill", function(d){
+                            var hasGeothermal = geothermalStates.indexOf(d.properties["postal"]) != -1
+                            if(hasGeothermal){
+                                return "#bbb";
+                              } else {
+                                return "#777";
+                              }
+                        })
+                        .attr("font-size", function(d){
+                            var hasGeothermal = geothermalStates.indexOf(d.properties["postal"]) != -1
+                            if(hasGeothermal){
+                                return 6;
+                              } else {
+                                return 6;
+                              }
+                        })
+                        .attr("font-weight", function(d){
+                              var hasGeothermal = geothermalStates.indexOf(d.properties["postal"]) != -1
+                              if(hasGeothermal){
+                                return "bold";
+                              } else {
+                                return "normal";
+                              }
+                        })
                         .text(function(d){
                             return d.properties["postal"];
                         })
 		
-      var operatingSymbols = svg.append("g")
+      var operatingSymbols = plantsGroup.append("g")
+                    .attr("class", "operatingGroup")
                     .selectAll(".operating")
                     .data(operating)
                     .enter()
@@ -212,38 +260,91 @@ var images = svg.selectAll("image")
                       .attr("stroke", "#1b2c36")
                       .attr("stroke-width", 0.2);
 
-var l = 0*w,
-t= h*0.25,
-w2 = .5*w,
-h2 = .5*h;
+    addDiscreteListeners();
 
-    setTimeout(function(){
-        svg.transition().duration(3000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
-    },2000)
-
-      // var coords = [];
-
-      // box.forEach(function(point){
-      //       coords.push(path.centroid(point));
-      // });
-      
-      // var bounds = {
-      //       top: coords[3][1],
-      //       left: coords[3][0],
-      //       bottom: coords[0][1],
-      //       right: coords[1][0]
-      // }
-
-      // var extentRect = svg.append("rect")
-      //                       .attr("x", bounds.left)
-      //                       .attr("y", bounds.top)
-      //                       .attr("width", bounds.right - bounds.left)
-      //                       .attr("height", bounds.bottom - bounds.top)
-      //                       .attr("fill", "none")
-      //                       .attr("stroke", "#fff");
+    // setTimeout(function(){
+    //     svg.transition().duration(3000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
+    // },2000)
 
 
      });
+
+//////////////////////////////////////////////////////////////////////
+//////////////////1)Discrete Animations///////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+var updateChart = {
+  zoomToOperating: function(){
+    console.log("zoom to operating!");
+    var l = 0*w,
+    t= h*0.25,
+    w2 = .5*w,
+    h2 = .5*h;
+
+    svg.transition("zoom in!").duration(2000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
+  },
+  addDeveloping: function(){
+    console.log("add developing!");
+
+  },
+  removeDeveloping: function(){
+    console.log("remove developing!");
+
+
+
+  },
+  zoomOut: function(){
+    console.log("zoom out!");
+    svg.transition("zoom out!").duration(2000).attr("viewBox", `0 0 ${w} ${h}`);
+  },
+  fadeInDepth: function(){
+    console.log("fade in depth!");
+    //fade out hillshade and plants
+    plantsGroup.transition("fadeOut")
+              .duration(1000)
+              .attr("opacity", 0);
+    //fade in depth group
+    depthGroup.transition("fadeIn")
+            .duration(1000)
+            .attr("opacity", 1);
+    //fade in 500m
+    depthGroup.select(`[data-index="${500}"]`)
+            .transition("fadeIn")
+            .duration(1000)
+            .attr("opacity", 1);
+    //fade in HTML depth elements
+    d3.selectAll(".depth")
+            .transition("fadeIn")
+            .duration(1000)
+            .style("opacity", 1);
+
+  },
+  fadeOutDepth: function(){
+    console.log("fade out depth!");
+    //fade out hillshade and plants
+    plantsGroup.transition("fadeIn")
+              .duration(1000)
+              .attr("opacity", 1);
+    //fade out depth group
+    depthGroup.transition("fadeOut")
+            .duration(1000)
+            .attr("opacity", 0);
+    //fade out 500m
+    depthGroup.select(`[data-index="${500}"]`)
+            .transition("fadeOut")
+            .duration(1000)
+            .attr("opacity", 0);
+    //fade out HTML depth elements
+    d3.selectAll(".depth")
+            .transition("fadeOut")
+            .duration(1000)
+            .style("opacity", 0);
+
+  }
+}
+
+ 
+
 
 //////////////////////////////////////////////////////////////////////
 //////////////////1)Smooth Animations, with RAF///////////////////////////////
@@ -299,7 +400,7 @@ function update(){
   });
 
   d3.select(".depthMarker").attr("transform", `translate(${w-axisMargins.right-6},${yScale(currentDepth)-6})`);
-  d3.select(".depth").html(Math.round(currentDepth))
+  d3.select(".depthNumber").html(Math.round(currentDepth))
 
   // //fly from origin to centroids
   // stateCentroids.attr("cx", function(d){
