@@ -32,14 +32,13 @@ if(imageRatio>screenRatio){
 var h = $("figure.sticky").height();
 var w = $("figure.sticky").width();
 
- //set top of sticky position so it's centered vertically
-  var stickyH = $(".sticky").height();
-  var windowH = window.innerHeight;
-  var stickyTop = (windowH - stickyH)/2;
-  d3.select("figure.sticky").style("top",stickyTop+"px");
+//set top of sticky position so it's centered vertically
+var stickyH = $(".sticky").height();
+var windowH = window.innerHeight;
+var stickyTop = (windowH - stickyH)/2;
+d3.select("figure.sticky").style("top",stickyTop+"px");
 
 ///////////////
-console.log(width);
 
 var svg = d3.select("figure.map")
               .append("svg")
@@ -115,8 +114,8 @@ var images = depthGroup.selectAll(".stack")
   				  .range([axisMargins.top,h - axisMargins.bottom]);
 
   var rScale = d3.scaleSqrt()
-            .domain([0,90])
-            .range([2,15]);
+            .domain([0,850])
+            .range([0,35]);
 
   var yAxis = d3.axisRight(yScale)
   					.ticks(5)
@@ -156,6 +155,10 @@ var images = depthGroup.selectAll(".stack")
     });
  }
 
+////////////////////////////////////////////////////////////
+/////////////////Load Data//////////////////////////
+////////////////////////////////////////////////////////////
+
 
    Promise.all([
       d3.json("data/bounding_box_wgs84.geojson"),
@@ -169,6 +172,10 @@ var images = depthGroup.selectAll(".stack")
       var operating = operatingJSON.features.sort(function(a,b){
           return b.properties["CAP_MW"] - a.properties["CAP_MW"];
       });
+
+      //loaded txt file as javascript
+      console.log(geoAreas);
+
 
       var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
 
@@ -245,18 +252,24 @@ var images = depthGroup.selectAll(".stack")
       var operatingSymbols = plantsGroup.append("g")
                     .attr("class", "operatingGroup")
                     .selectAll(".operating")
-                    .data(operating)
+                    .data(geoAreas)
                     .enter()
                     .append("circle")
                       .attr("cx", function(d){
-                        return path.centroid(d)[0];
+                        return albers(d.geometry.coordinates)[0];
                     })
                       .attr("cy", function(d){
-                          return path.centroid(d)[1];
+                          return albers(d.geometry.coordinates)[1];
                       })
-                      .attr("r", d=> rScale(d.properties["CAP_MW"]))
+                      .attr("r", function(d){
+                        var totalMW= 0;
+                        for(var plant of d.plants){
+                            totalMW+=plant.properties["CAP_MW"];
+                        }
+                        return rScale(totalMW);
+                      })
                       .attr("fill", "#5d95b3")
-                      .attr("fill-opacity", 0.3)
+                      .attr("fill-opacity", 0.5)
                       .attr("stroke", "#1b2c36")
                       .attr("stroke-width", 0.2);
 
