@@ -146,9 +146,16 @@ var images = svg.selectAll("image")
           return b.properties["CAP_MW"] - a.properties["CAP_MW"];
       });
 
+
+      var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
+      var geothermalStatesData = states.filter(function(state){
+            return geothermalStates.indexOf(state.properties["postal"]) != -1;
+      })
+      console.log(geothermalStatesData);
+
      	albers.fitExtent([[0,0],[w,h]], boxJSON);
 
-     	var states = svg.append("g")
+     	var statesBorders = svg.append("g")
      					.selectAll(".states")
      					.data(states)
      					.enter()
@@ -166,24 +173,44 @@ var images = svg.selectAll("image")
      						// .attr("stroke-width", 0.15)
                 .attr("vector-effect", "non-scaling-stroke");
 
-      
-     						
+
+      //postal
+      var stateLabels = svg.append("g")
+                    .selectAll(".stateLabels")
+                    .data(states)
+                    .enter()
+                    .append("text")
+                        .attr("text-anchor", "middle")
+                        .attr("x", function(d){
+                          if(d.properties["postal"]!="CA"){
+                            return path.centroid(d)[0];
+                          }else {
+                            return path.centroid(d)[0] - 10;
+                          }
+                        })
+                        .attr("y", d=>path.centroid(d)[1])
+                        .attr("fill", "#999")
+                        .attr("font-size", 6)
+                        .text(function(d){
+                            return d.properties["postal"];
+                        })
+		
       var operatingSymbols = svg.append("g")
-                                .selectAll(".operating")
-                                .data(operating)
-                                .enter()
-                                .append("circle")
-                                  .attr("cx", function(d){
-                                    return path.centroid(d)[0];
-                                })
-                                .attr("cy", function(d){
-                                    return path.centroid(d)[1];
-                                })
-                                .attr("r", d=> rScale(d.properties["CAP_MW"]))
-                                .attr("fill", "#5d95b3")
-                                .attr("fill-opacity", 0.3)
-                                .attr("stroke", "#1b2c36")
-                                .attr("stroke-width", 0.2);
+                    .selectAll(".operating")
+                    .data(operating)
+                    .enter()
+                    .append("circle")
+                      .attr("cx", function(d){
+                        return path.centroid(d)[0];
+                    })
+                      .attr("cy", function(d){
+                          return path.centroid(d)[1];
+                      })
+                      .attr("r", d=> rScale(d.properties["CAP_MW"]))
+                      .attr("fill", "#5d95b3")
+                      .attr("fill-opacity", 0.3)
+                      .attr("stroke", "#1b2c36")
+                      .attr("stroke-width", 0.2);
 
 var l = 0*w,
 t= h*0.25,
