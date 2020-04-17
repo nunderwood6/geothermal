@@ -28,11 +28,6 @@ if(imageRatio>screenRatio){
 var h = $("figure.sticky").height();
 var w = $("figure.sticky").width();
 
-var l = 0.2*w,
-t= h*0.4,
-w2 = .4*w,
-h2 = .4*h;
-
  //set top of sticky position so it's centered vertically
   var stickyH = $(".sticky").height();
   var windowH = window.innerHeight;
@@ -52,11 +47,15 @@ var svg = d3.select("figure.map")
               //.style("left", (100-width)/2 + "%")
               //.style("top", "0");
 
-// setTimeout(function(){
-//     svg.transition().duration(5000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
-// },2000)
+var hillshade = svg.append("image")
+                      .attr("href", "img/dark_hillshade.jpg")
+                      .attr("x", 0)
+                      .attr("y", 0)
+                      .attr("width", w+"px")
+                      .attr("height", h+"px");
 
 var imageData = [500,1000,1500,2000,2500,3000]
+
 
 var images = svg.selectAll("image")
                   .data(imageData)
@@ -67,7 +66,7 @@ var images = svg.selectAll("image")
                   .attr("class", "stack")
                   .attr("opacity", function(d){
                     if(d == 500) {
-                      return 1;
+                      return 0;
                     } else {
                       return 0;
                     }
@@ -109,6 +108,10 @@ var images = svg.selectAll("image")
   				  .domain([0,3000])
   				  .range([axisMargins.top,h - axisMargins.bottom]);
 
+  var rScale = d3.scaleSqrt()
+            .domain([0,90])
+            .range([2,15]);
+
   var yAxis = d3.axisRight(yScale)
   					.ticks(5)
   					.tickFormat(d3.format("d"));
@@ -132,12 +135,16 @@ var images = svg.selectAll("image")
 
    Promise.all([
       d3.json("data/bounding_box_wgs84.geojson"),
-      d3.json("data/states.json")
+      d3.json("data/states.json"),
+      d3.json("data/operating_plants.geojson")
     ])
-    .then(function([boxJSON,states_topoJSON]){
+    .then(function([boxJSON,states_topoJSON,operatingJSON]){
 
     	var box = boxJSON.features;
     	var states = topojson.feature(states_topoJSON, states_topoJSON.objects.states).features;
+      var operating = operatingJSON.features.sort(function(a,b){
+          return b.properties["CAP_MW"] - a.properties["CAP_MW"];
+      });
 
      	albers.fitExtent([[0,0],[w,h]], boxJSON);
 
@@ -149,23 +156,56 @@ var images = svg.selectAll("image")
      						.attr("d", path)
      						.attr("class", "states")
      						.attr("fill", "none")
-     						.attr("stroke", "#fff")
-     						.attr("stroke-width", 0.15)
-                .attr("vector-effect", "non-scaling-stroke")
-     						.attr("opacity", 0.5);
+            //with hillshade
+                .attr("stroke", "#bbb")
+               .attr("opacity", 0.5)
+                .attr("stroke-width", 0.15)
+            //with temperature
+     						// .attr("stroke", "#fff")
+           //     .attr("opacity", 0.5)
+     						// .attr("stroke-width", 0.15)
+                .attr("vector-effect", "non-scaling-stroke");
 
-      var coords = [];
-
-      box.forEach(function(point){
-            coords.push(path.centroid(point));
-      });
       
-      var bounds = {
-            top: coords[3][1],
-            left: coords[3][0],
-            bottom: coords[0][1],
-            right: coords[1][0]
-      }
+     						
+      var operatingSymbols = svg.append("g")
+                                .selectAll(".operating")
+                                .data(operating)
+                                .enter()
+                                .append("circle")
+                                  .attr("cx", function(d){
+                                    return path.centroid(d)[0];
+                                })
+                                .attr("cy", function(d){
+                                    return path.centroid(d)[1];
+                                })
+                                .attr("r", d=> rScale(d.properties["CAP_MW"]))
+                                .attr("fill", "#5d95b3")
+                                .attr("fill-opacity", 0.3)
+                                .attr("stroke", "#1b2c36")
+                                .attr("stroke-width", 0.2);
+
+var l = 0*w,
+t= h*0.25,
+w2 = .5*w,
+h2 = .5*h;
+
+    setTimeout(function(){
+        svg.transition().duration(3000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
+    },2000)
+
+      // var coords = [];
+
+      // box.forEach(function(point){
+      //       coords.push(path.centroid(point));
+      // });
+      
+      // var bounds = {
+      //       top: coords[3][1],
+      //       left: coords[3][0],
+      //       bottom: coords[0][1],
+      //       right: coords[1][0]
+      // }
 
       // var extentRect = svg.append("rect")
       //                       .attr("x", bounds.left)
@@ -191,7 +231,7 @@ var observerOptions = {
 
 let observer = new IntersectionObserver(intersectionCallback, observerOptions);
 
-var target = d3.select(".step").node();
+var target = d3.select(".temperature").node();
 observer.observe(target);
 
 var latestKnownTop = window.innerHeight;

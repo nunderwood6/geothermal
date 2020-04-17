@@ -57,7 +57,7 @@ article {
 
 .step {
 	margin: 200px auto;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 figure.sticky {
@@ -115,6 +115,12 @@ p {
 	font-family: 'Playfair Display', serif;
 }
 
+h3 {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .firstCharacter {
 	float: left;
 	font-size: 75px;
@@ -150,6 +156,7 @@ p {
 	top: 3%;
 	padding-right: 0%;
 	z-index: 3;
+	opacity: 0;
 }
 
 .colorScale p {
@@ -179,6 +186,10 @@ p {
 	}
 
 
+}
+
+.yAxis,.depthMarker {
+	opacity: 0;
 }
 
 
