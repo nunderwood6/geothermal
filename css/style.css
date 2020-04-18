@@ -191,3 +191,10 @@ h3 {
 
 
 }
+
+.sources {
+	list-style: none;
+	max-width: 650px;
+	margin: 0 auto 50px;
+	padding: 0;
+}

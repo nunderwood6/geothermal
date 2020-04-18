@@ -115,7 +115,7 @@ var images = depthGroup.selectAll(".stack")
 
   var rScale = d3.scaleSqrt()
             .domain([0,850])
-            .range([0,35]);
+            .range([0,30]);
 
   var yAxis = d3.axisRight(yScale)
   					.ticks(5)
@@ -249,7 +249,7 @@ var images = depthGroup.selectAll(".stack")
                             return d.properties["postal"];
                         })
 		
-      var operatingSymbols = plantsGroup.append("g")
+      var geoAreaSymbols = plantsGroup.append("g")
                     .attr("class", "operatingGroup")
                     .selectAll(".operating")
                     .data(geoAreas)
@@ -269,8 +269,8 @@ var images = depthGroup.selectAll(".stack")
                         return rScale(totalMW);
                       })
                       .attr("fill", "#5d95b3")
-                      .attr("fill-opacity", 0.5)
-                      .attr("stroke", "#1b2c36")
+                      .attr("fill-opacity", 0.8)
+                      .attr("stroke", "#c9e5f5")
                       .attr("stroke-width", 0.2);
 
     addDiscreteListeners();
