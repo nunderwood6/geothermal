@@ -33,7 +33,7 @@ div.title h1 {
 
 div.subhead {
 	position: absolute;
-	top: 63%;
+	top: 75%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -125,6 +125,16 @@ h3 {
 	text-align: center;
 }
 
+h4 {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-top: 25px;
+}
+
 .firstCharacter {
 	float: left;
 	font-size: 75px;
@@ -160,12 +170,21 @@ h3 {
 	top: 3%;
 	padding-right: 0%;
 	z-index: 3;
+}
+
+.colorScale.depth {
+	opacity: 1;
+}
+
+.colorScale.enhanced {
 	opacity: 0;
 }
 
 .colorScale p {
 	display: inline-block;
 	font-size: 14px;
+	font-family: proxima-nova, sans-serif;
+	padding: 0;
 }
 
 .colorScale img {
@@ -192,9 +211,71 @@ h3 {
 
 }
 
+.lineChart {
+	margin: 25px auto;
+	max-width: 650px;
+	width: 100%;
+}
+
+.lineChart svg {
+	display: block;
+	margin: 0 auto;
+}
+
+.lines {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: #ccc;
+}
+
+.line.Geothermal {
+	stroke-width: 4px;
+}
+
+.tick text{
+	font-size: 12px;
+	fill: #ddd;
+	font-weight: bold;
+}
+
+.value text {
+	font-size: 12px;
+	font-weight: bold;
+	fill: #fff;
+}
+
+div.chart {
+	position: relative;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+
+}
+
+div.chart p {
+	font-family: proxima-nova, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
 .sources {
 	list-style: none;
 	max-width: 650px;
 	margin: 0 auto 50px;
+	padding: 15px;
+}
+
+p.key {
+	width: fit-content;
+	margin: 0 auto;
 	padding: 0;
 }
+
+.key b {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 6px;
+	margin-left: 10px;
+}
+

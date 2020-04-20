@@ -16,18 +16,20 @@
 
 <!--         <img src="img/header.svg" class="header"> -->
         <div class="title">
-            <h1>The Forgotten Renewable</h1>
+            <h1>The Rise of Geothermal</h1>
             <div class="subhead">
-                <h2>Geothermal energy from deep below the Earth's surface could be a game changer in the transition to clean energy.</h2>
-                <p class="attribution">By <a href="https://nunderwood6.github.io/portfolio/">Nick Underwood</a> | March 2020</p>
+                <h2>A vast ocean of subterranean heat lies untapped by conventional geothermal energy development. Reaching it could be a game changer in the race for clean energy.</h2>
+            <!--     <h2>Geothermal energy from deep below the Earth's surface could be a game changer in the transition to clean energy.</h2> -->
+<!--                 <p class="attribution">
+                    By <a href="https://nunderwood6.github.io/portfolio/">Nick Underwood</a> | 
+               April 2020</p> -->
             </div>
         </div>
 
-        <p><span class="firstCharacter">A</span> vast ocean of heat is just below us. You don't need to fly to Florida or California to find someplace warm. Several football fields below you where you're sitting right now, it's hotter than the Sahara Desert at noon. Less than 5 kilometers below you, the rock is hot enough to boil water. 25 degrees celsius per kilometer on average. </p>
+        <p><span class="firstCharacter">S</span>everal kilometers below where you’re sitting right now, the rock is hot enough to boil water. Brimming just below the surface of the Earth is a virtually inexhaustible supply of clean energy, produced by the decay of radioactive elements in the crust. Why is such a glaringly obvious source of energy still untapped? Why is geothermal energy so underground it’s been called "<a href=" https://www.npr.org/2018/02/04/582132168/the-forgotten-renewable-geothermal-energy-production-heats-up">the forgotten renewable</a>"?</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <p>The map shows estimated temperature 500 meters below the Earth's surface. As we descend further, the temperature heats up drastically.</p>
+        <p>Near the surface, the temperature of the crust increases about 25°C per kilometer. Yet there’s a lot of geographic variation: some places, the Earth heats up much faster. </p>
 
             
 
@@ -40,42 +42,38 @@
                     <img src="img/magma.jpg"></img>
                     <p>230°C</p>
                  </div>
+
+                 <div class="colorScale enhanced">
+                    <p>Low</p>
+                    <img src="img/viridis.png"></img>
+                    <p>High</p>
+                 </div>
                 
             </figure>
 
             <article class="textContainer">
 
-                <div class="discrete step" forward='zoomToOperating' backward='zoomOut'>
-                    <h3>Operating plants</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="discrete step" forward='addDeveloping' backward='removeDeveloping'>
-                    <h3>Developing plants</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="discrete step" forward='zoomOut' backward='zoomToOperating'>
-                    <h3>Let's zoom back out</h3>
-                    <p></p>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="discrete step" forward='fadeInDepth' backward='fadeOutDepth'>
-                    <h3>Temperature at 500 meters below the Earth.</h3>
-                    <p>As we descend deeper, things heat up.</p>
-                </div>
-
-                <div class="spacer"></div>
-
-
                 <div class="temperature step" data-index='0'>
-                    <p>Earth is fire.</p>
+                    <p>The subduction of the Pacific plate beneath the Western continental U.S. produces significant amounts of heat. Scroll to see estimates of temperature at depth.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="discrete step" forward='fadeOutDepth' backward='fadeInDepth'>
+                    <p>Conventional geothermal development requires three phenomena to occur in one place: heat, permeability, and water. In order to produce electricity, we drill wells, then draw liquid through the rocks to produce steam and turn turbines. Since the geographic coincidence of these three requirements is very limited, geothermal development in the U.S. has been limited to several hotspots in the west.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="discrete step" forward='zoomToOperating' backward='zoomOut'>
+                    <h3>Developing plants</h3>
+                    <p>Even with these limitations, geothermal has been making gains. The Geysers area north of San Francisco is the largest geothermal producer in the world, and total production was projected to double in 2014.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="discrete step" forward='fadeInEGS' backward='fadeOutEGS'>
+                    <p>The advent of a new approach called enhanced geothermal systems(EGS) means that many more areas may become viable in the near future. EGS overcomes the limitations of traditional geothermal by injecting liquid via wells, increasing the permeability. In principle this is similar to the way fracking works. There are some concerns about induced seismicity.</p>
                 </div>
 
                 <div class="spacer"></div>
@@ -84,9 +82,27 @@
 
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><span class="firstCharacter">S</span>till, for right now geothermal lags behind wind and solar. There are several valid reasons for this. One is the high fixed capital required to build geothermal plants.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <!--  <h4 class="chartTitle">Total Installed Cost</h4> -->
+
+        <p class="key installed"></p>
+
+        <div class="lineChart installed"></div>
+
+        <p>But over the lifetime of the project, geothermal is highly competititve.</p>
+
+        <!-- <h4 class="chartTitle">LCOE</h4> -->
+
+        <p class="key lcoe"></p>
+
+        <div class="lineChart lcoe"></div>
+
+        <p>Site identification and development are significant challenges for geothermal. Yet EGS means that the future is bright. And geothermal is superior to solar and wind in a couple ways. One, that the energy supply is constant, 24/7/365. Second is that geothermal is less expensive in terms of the land necessary- you don’t need sprawling amounts of land and the development is mostly underground.</p>
+
+        <div class="chart"></div>
+
+        <p>Right now, geothermal is only a tiny fraction of total energy production in the United States. But researchers estimate EGS could provide 100GW of viable energy production, increasing the total by a factor of 40.</p>
 
         
         <h6 style="font-weight: normal; text-decoration: underline; text-align: center; font-size: 24px; max-width: 650px; margin: 20px auto 0px;">Data Sources</h6>
@@ -97,10 +113,12 @@
             <li>-<b>Operating & Developing Geothermal Plants</b>: <a href="https://www.nrel.gov/gis/geothermal.html">National Renewable Energy Laboratory</a>2014</li>
             <li>-<b>Solar, Wind, and Geothermal Energy Production</b></li>
             <li>-<b>Hillshade, State & Country Boundaries</b>: Natural Earth</li>
+            <li>-<b>U.S. Electricity Generation</b>: <a href="https://www.eia.gov/tools/faqs/faq.php?id=427&t=3">U.S. Energy Information Administration 2019</a></li>
             <li><b>Additional Sources</b>: <a href="https://www.npr.org/2018/02/04/582132168/the-forgotten-renewable-geothermal-energy-production-heats-up
 ">NPR</a></li>
         </ul>
 
+        <script src="lib/helpers/wrapText.js"></script>
         <script src="data/geoAreas.txt"></script>
         <script src="lib/enter-view.js"></script>
         <script src="lib/topojson.min.js"></script>

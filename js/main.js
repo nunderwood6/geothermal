@@ -15,12 +15,10 @@ var width;
 var currentDepth = 500;
 
 if(imageRatio>screenRatio){
-  console.log("tall");
   width = 100;
   d3.select("figure.sticky").style("width", "100vw")
                             .style("height", 100/1.5+"vw");
 } else {
-  console.log("wide");
   width = window.innerHeight * 1.6 / window.innerWidth * 100;
   d3.selectAll("figure.sticky").style("width", width + "vw")
                            .style("height", width/1.5+"vw")
@@ -50,12 +48,16 @@ var svg = d3.select("figure.map")
               //.style("left", (100-width)/2 + "%")
               //.style("top", "0");
 
-var plantsGroup = svg.append("g")
-                      .attr("class", "plantsGroup")
-                      .attr("opacity", 1);
-
 var depthGroup = svg.append("g")
                       .attr("class", "depthGroup")
+                      .attr("opacity", 1);
+
+var plantsGroup = svg.append("g")
+                      .attr("class", "plantsGroup")
+                      .attr("opacity", 0);
+
+var enhancedGroup = svg.append("g")
+                      .attr("class","enhancedGroup")
                       .attr("opacity", 0);
 
 var hillshade = plantsGroup.append("image")
@@ -64,6 +66,15 @@ var hillshade = plantsGroup.append("image")
                       .attr("y", 0)
                       .attr("width", w+"px")
                       .attr("height", h+"px");
+
+var enchancedPotential = enhancedGroup.append("image")
+                      .attr("href", "img/egs_resource.jpg")
+                      .attr("x", 0)
+                      .attr("y", 0)
+                      .attr("width", w+"px")
+                      .attr("height", h+"px");
+
+
 
 var imageData = [500,1000,1500,2000,2500,3000]
 
@@ -75,7 +86,10 @@ var images = depthGroup.selectAll(".stack")
                   .attr("href", d=>`img/${d}.jpg`)
                   .attr("data-index", d=>d)
                   .attr("class", "stack")
-                  .attr("opacity", 0)
+                  .attr("opacity", function(d){
+                    if(d==500) return 1;
+                    else return 0;
+                  })
                   .attr("x", 0)
                   .attr("y", 0)
                   .attr("width", w+"px")
@@ -163,19 +177,17 @@ var images = depthGroup.selectAll(".stack")
    Promise.all([
       d3.json("data/bounding_box_wgs84.geojson"),
       d3.json("data/states.json"),
-      d3.json("data/operating_plants.geojson")
+      d3.json("data/operating_plants.geojson"),
+      d3.json("data/forge.geojson")
     ])
-    .then(function([boxJSON,states_topoJSON,operatingJSON]){
+    .then(function([boxJSON,states_topoJSON,operatingJSON,forgeJSON]){
 
     	var box = boxJSON.features;
     	var states = topojson.feature(states_topoJSON, states_topoJSON.objects.states).features;
       var operating = operatingJSON.features.sort(function(a,b){
           return b.properties["CAP_MW"] - a.properties["CAP_MW"];
       });
-
-      //loaded txt file as javascript
-      console.log(geoAreas);
-
+      var forge = forgeJSON.features;
 
       var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
 
@@ -273,12 +285,42 @@ var images = depthGroup.selectAll(".stack")
                       .attr("stroke", "#c9e5f5")
                       .attr("stroke-width", 0.2);
 
+
+    //add utah forge site
+    var forgeSite = enhancedGroup.selectAll(".forgeSite")
+                                  .data(forge)
+                                  .enter()
+                                  .append("circle")
+                                  .attr("cx", function(d){
+                                      return albers(d.geometry.coordinates)[0];
+                                  })
+                                    .attr("cy", function(d){
+                                        return albers(d.geometry.coordinates)[1];
+                                  })
+                                  .attr("r", 3)
+                                  .attr("fill", "#fff")
+                                  .attr("stroke", "none")
+                                  .attr("stroke-width", 1.5);
+
+    //add forge label
+    var forgeLabel = enhancedGroup.selectAll(".forgeSiteLabel")
+                                  .data(forge)
+                                  .enter()
+                                  .append("text")
+                                  .attr("x", function(d){
+                                      return albers(d.geometry.coordinates)[0]+5;
+                                  })
+                                    .attr("y", function(d){
+                                        return albers(d.geometry.coordinates)[1]+15;
+                                  })
+                                  .attr("fill", "#fff")
+                                  .attr("font-size", "14px")
+                                  .text("FORGE site Milton, UT")
+                                  .call(wrapText, 90, 14);
+
+
+
     addDiscreteListeners();
-
-    // setTimeout(function(){
-    //     svg.transition().duration(3000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
-    // },2000)
-
 
      });
 
@@ -334,7 +376,7 @@ var updateChart = {
   },
   fadeOutDepth: function(){
     console.log("fade out depth!");
-    //fade out hillshade and plants
+    //fade in hillshade and plants
     plantsGroup.transition("fadeIn")
               .duration(1000)
               .attr("opacity", 1);
@@ -353,6 +395,44 @@ var updateChart = {
             .duration(1000)
             .style("opacity", 0);
 
+  },
+  fadeInEGS: function(){
+    console.log("fade in EGS!");
+    //zoom out
+    updateChart.zoomOut();
+    //fade out hillshade and plants
+    plantsGroup.transition("fadeOut")
+              .duration(1000)
+              .attr("opacity", 0);
+    //fade in EGS
+    enhancedGroup.transition("fadeIn")
+              .duration(1000)
+              .attr("opacity", 1);
+    //fade in HTML enhanced elements
+    d3.selectAll(".enhanced")
+            .transition("fadeIn")
+            .duration(1000)
+            .style("opacity", 1);
+
+
+  },
+  fadeOutEGS: function(){
+    console.log("fade out EGS!");
+    //zoom back in
+    updateChart.zoomToOperating();
+    //fade in hillshade and plants
+    plantsGroup.transition("fadeIn")
+              .duration(1000)
+              .attr("opacity", 1);
+    //fade out EGS
+    enhancedGroup.transition("fadeout")
+              .duration(1000)
+              .attr("opacity", 0);
+    //fade out HTML enhanced elements
+    d3.selectAll(".enhanced")
+            .transition("fadeOut")
+            .duration(1000)
+            .style("opacity", 0);
   }
 }
 
@@ -443,6 +523,367 @@ function intersectionCallback(entries, observer){
     listening = false;
   }
 }
+
+//////////////////////////////////////////////////////////////////////
+//////////////////1)Energy Cost Chart///////////////////////////////
+//////////////////////////////////////////////////////////////////////
+var fmtYearAbbrev = d => (d.getFullYear() + "").slice(-2);
+var fmtYearFull = d => d.getFullYear();
+var fmtDayYear = d => d.getDate() + ", " + d.getFullYear();
+var fmtDateFull = d => getAPMonth(d) + " " + fmtDayYear(d).trim();
+var formatData = function(data) {
+    
+  var dataSeries = [];
+
+  data.forEach(function(d) {
+    d.date = new Date(d.year, 0, 1);
+  });
+
+  /*
+   * Restructure tabular data for easier charting.
+   */
+  for (var column in data[0]) {
+
+    if(column!="year" && column!="date"){
+
+    dataSeries.push({
+      name: column,
+      values: data.map(function(d) {
+        return {
+          date: d.date,
+          amt: d[column]
+        };
+        // filter out empty data. uncomment this if you have inconsistent data.
+               }).filter(function(d) {
+                   return d.amt > 0;
+      })
+    });
+
+    }
+
+
+  }
+  return dataSeries;
+
+};
+
+
+//////////////////Load line chart data///////////////////
+
+d3.csv("data/electricity_cost_lcoe.csv").then(function(data){
+
+    var config = {
+      "target": "div.lineChart.lcoe",
+      "valueUnits": "USD/kWh",
+      "format": function(value){
+        return Math.round(value*100)/100
+      },
+      "key": "p.key.lcoe"
+    };
+    drawLineChart(data,config);   
+});
+
+d3.csv("data/electricity_cost_installed.csv").then(function(data){
+
+    var config = {
+      "target": "div.lineChart.installed",
+      "valueUnits": "USD/kW",
+      "format": function(value){
+        return d3.format(",")(value);
+      },
+      "key": "p.key.installed"
+    };
+    drawLineChart(data,config);
+
+})
+
+function drawLineChart(data,config) {
+    
+    var formatted = formatData(data);
+
+    var dateColumn = "date";
+    var valueColumn = "amt";
+
+    var aspectWidth = 16;
+    var aspectHeight = 7;
+
+    var annotationWidth = 75,
+    annotationLineHeight = 12;
+
+    var margins = {
+      top: 5,
+      right: 75,
+      bottom: 20,
+      left: 50
+    };
+
+    var ticksX = 10;
+    var ticksY = 5;
+    var roundTicksFactor = 0.05;
+
+  var isMobile;
+  if(screenRatio<0.8) isMobile = true;
+
+    // Mobile
+  if (isMobile) {
+    aspectWidth = 4;
+    aspectHeight = 3;
+    ticksX = 5;
+    ticksY = 5;
+    margins.right = 75;
+    annotationXOffset = -6;
+    annotationYOffset = -20;
+    annotationWidth = 75;
+    annotationLineHeight = 12;
+  }
+  var containerWidth = $(config.target).width();
+
+  // Calculate actual chart dimensions
+  var chartWidth = containerWidth - margins.left - margins.right;
+  var chartHeight =
+    Math.ceil((containerWidth * aspectHeight) / aspectWidth) -
+    margins.top -
+    margins.bottom;
+
+  var dates = formatted[0].values.map(d => d.date);
+  var extent = [dates[0], dates[dates.length - 1]];
+
+  console.log("chart width", chartWidth);
+
+  var xScale = d3
+    .scaleTime()
+    .domain(extent)
+    .range([0, chartWidth]);
+
+  var values = formatted.reduce(
+    (acc, d) => acc.concat(d.values.map(v => v[valueColumn])),
+    []
+  );
+
+  var floors = values.map(
+    v => Math.floor(v / roundTicksFactor) * roundTicksFactor
+  );
+  var min = Math.min.apply(null, floors);
+
+  if (min > 0) {
+    min = 0;
+  }
+
+  var ceilings = values.map(
+    v => Math.ceil(v / roundTicksFactor) * roundTicksFactor
+  );
+  var max = Math.max.apply(null, ceilings);
+
+  var yScale = d3
+    .scaleLinear()
+    .domain([min, max])
+    .range([chartHeight, 0]);
+
+  var colorScale = d3
+    .scaleOrdinal()
+    .domain(formatted.map(d => d.name))
+    .range([
+      "#4e9c6f",
+      "#d6d451",
+      "#4d71a1",
+      "#f2362c"
+    ]);
+
+  var chartElement = d3.select(config.target)
+    .append("svg")
+    .attr("width", chartWidth + margins.left + margins.right)
+    .attr("height", chartHeight + margins.top + margins.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margins.left + "," + margins.top + ")");
+
+  /*
+   * Create D3 axes.
+   */
+  var xAxis = d3
+    .axisBottom()
+    .scale(xScale)
+    // .tickValues([new Date(1970,0,1),
+    //              new Date(1980,0,1),
+    //              new Date(1990,0,1),
+    //              new Date(2000,0,1),
+    //              new Date(2010,0,1),
+    //              new Date(2020,0,1)])
+    .tickFormat(function(d, i) {
+      if (isMobile) {
+        return "\u2019" + fmtYearAbbrev(d);
+      } else {
+        return fmtYearFull(d);
+      }
+    });
+
+  var yAxis = d3
+    .axisLeft()
+    .scale(yScale)
+    .ticks(ticksY);
+    // .tickFormat(function(d){
+    //   return d == 0 ? 0 : (d / 1000000000).toFixed(0) + "B";
+    // });
+
+  /*
+   * Render axes to chart.
+   */
+  chartElement
+    .append("g")
+    .attr("class", "x axis")
+    .attr("transform", `translate(${0},${chartHeight})`)
+    .call(xAxis);
+
+    0, chartHeight
+
+  chartElement
+    .append("g")
+    .attr("class", "y axis")
+    .call(yAxis);
+
+  /*
+   * Render grid to chart.
+   */
+  var xAxisGrid = function() {
+    return xAxis;
+  };
+
+  var yAxisGrid = function() {
+    return yAxis;
+  };
+
+  /*
+   * Render 0 value line.
+   */
+  if (min < 0) {
+    chartElement
+      .append("line")
+      .attr("class", "zero-line")
+      .attr("x1", 0)
+      .attr("x2", chartWidth)
+      .attr("y1", yScale(0))
+      .attr("y2", yScale(0));
+  }
+
+  /*
+   * Render lines to chart.
+   */
+  var line = d3
+    .line()
+    .x(d => xScale(d[dateColumn]))
+    .y(d => yScale(d[valueColumn]));
+
+  chartElement
+    .append("g")
+    .attr("class", "lines")
+    .selectAll("path")
+    .data(formatted)
+    .enter()
+    .append("path")
+    .attr("class", function(d, i) {
+      return "line " + d.name;
+    })
+    .attr("stroke", d => colorScale(d.name))
+    .attr("d", d => line(d.values));
+
+  //values
+  chartElement
+    .append("g")
+    .attr("class", "value")
+    .selectAll("text")
+    .data(formatted)
+    .enter()
+    .append("text")
+    .attr("x", function(d, i) {
+      var last = d.values[d.values.length - 1];
+      return xScale(last[dateColumn]) + 5;
+    })
+    .attr("y", function(d) {
+      var last = d.values[d.values.length - 1];
+      return yScale(last[valueColumn]) + 3;
+    })
+    .text(function(d){
+      if(d.name == "Geothermal") return "Geothermal: "+ config.format(d.values[d.values.length - 1][valueColumn]) + " " + config.valueUnits;
+    })
+    .call(wrapText, annotationWidth, annotationLineHeight);
+
+    //key
+    d3.select(config.key)
+        .selectAll("b")
+        .data(formatted)
+        .enter()
+        .append("span")
+          .html(function(d){
+            var color =colorScale(d.name);
+
+
+
+            return `<b style="background-color:${color};"></b>` + d.name;
+
+          })
+          
+
+
+    }
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//////////////////1)Geothermal Production Chart///////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+var chartDivW = $("div.chart").width();
+$("div.chart").height(chartDivW);
+
+var chartSvg = d3.select("div.chart").append("svg")                                     
+              .attr("width",  "100%")
+              .attr("height", "100%")
+              .style("position", "absolute")
+              .style("top", "0px")
+              .style("left", "0px")
+              .style("z-index", "1");;
+
+var chartW = chartDivW - 30;
+
+//get data
+d3.csv("data/2019_energy.csv").then(function(data){
+
+  chartSvg.append("rect")
+            .attr("x", 15)
+            .attr("y", 15)
+            .attr("width", chartW)
+            .attr("height", chartW)
+            .attr("fill", "#777");
+
+  chartSvg.append("rect")
+            .attr("x", 15)
+            .attr("y", 15)
+            .attr("width", Math.sqrt(chartW*chartW* 16/ 4118))
+            .attr("height", Math.sqrt(chartW*chartW* 16/ 4118))
+            .attr("fill", "red");
+
+  d3.select("div.chart")
+                .append("p")
+                .html("Total U.S. Electricity Production")
+                .style("text-align", "center")
+                .style("position", "relative")
+                .style("width", "90%")
+                .style("padding-top", "45%")
+                .style("z-index", "5");
+
+  d3.select("div.chart")
+                .append("p")
+                .html("Geothermal")
+                .style("position", "absolute")
+                .style("z-index", "5")
+                .style("padding", "0px")
+                .style("left", 15 + Math.sqrt(chartW*chartW* 16/ 4118) + 5 + "px")
+                .style("top", 15 +"px");
+
+});
+
+
 
 }
 window.onload = wrapper();
