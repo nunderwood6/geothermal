@@ -1,0 +1,6710 @@
+var developingGeoAreas = [
+  {
+    "name": "Juab",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD001",
+          "PROJECT": "Abraham",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Juab",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Juab",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.72831700642537,
+            39.613321982120645
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD053",
+          "PROJECT": "Drum Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Juab",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Juab",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19428241623797,
+            39.58437237966038
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD052",
+          "PROJECT": "Drum Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Utah",
+          "COUNTY": "Juab",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Juab",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.27959135114747,
+            39.59504882879466
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -113.0673969246036,
+        39.59758106352523
+      ]
+    }
+  },
+  {
+    "name": "Agua Quieta",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD215",
+          "PROJECT": "Agua Quieta",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.30850686788898,
+            39.68579864643607
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.30850686788898,
+        39.68579864643607
+      ]
+    }
+  },
+  {
+    "name": "Aleutians East",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD002",
+          "PROJECT": "Akutan Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "City of Akutan",
+          "STATE": "Alaska",
+          "COUNTY": "Aleutians East",
+          "GEO_REG": null,
+          "GEO_LOC": "Aleutians East",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -165.8787605418282,
+            54.139862927289556
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -165.8787605418282,
+        54.139862927289556
+      ]
+    }
+  },
+  {
+    "name": "White Pine",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD003",
+          "PROJECT": "Alligator Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2(GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Nevada",
+          "COUNTY": "White Pine",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "White Pine",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.51948984788707,
+            39.75848062708099
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -115.51948984788707,
+        39.75848062708099
+      ]
+    }
+  },
+  {
+    "name": "Esmeralda",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD004",
+          "PROJECT": "Alum",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 33,
+          "DEVELOPER": "Sierra Geothermal Power Corporation",
+          "STATE": "Nevada",
+          "COUNTY": "Esmeralda",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Esmeralda",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.59010503094945,
+            37.733035036509825
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD029",
+          "PROJECT": "Clayton Valley Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 160,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Esmeralda",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Esmeralda",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000, NVN 089376X, NVN 085736, NVN 085739, NVN 088464, NVN 088465",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.58332959207576,
+            37.83322940530848
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD167",
+          "PROJECT": "Silver Peak",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Active",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 5,
+          "DEVELOPER": "Rockwood Lithium Inc.",
+          "STATE": "Nevada",
+          "COUNTY": "Esmeralda",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Esmeralda",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.60037084742471,
+            37.75192413882432
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD168",
+          "PROJECT": "Silver Peak Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Esmeralda",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Esmeralda",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.63332411831034,
+            37.78703323116975
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD178",
+          "PROJECT": "Sulphur - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Esmeralda",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Esmeralda",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 089619, NVN 089620, NVN 089621, NVN 089622",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.09425927805005,
+            38.02212042845348
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.70027777336206,
+        37.82546844805317
+      ]
+    }
+  },
+  {
+    "name": "Harney",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD005",
+          "PROJECT": "Alvord",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Oregon",
+          "COUNTY": "Harney",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Harney",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.53302027420318,
+            42.5440072694813
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.53302027420318,
+        42.5440072694813
+      ]
+    }
+  },
+  {
+    "name": "Apache",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD006",
+          "PROJECT": "Apache Geo Demonstration Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 5,
+          "DEVELOPER": "GreenFire Partners, LLC; Ridgeway Arizona Oil Corp.",
+          "STATE": "Arizona",
+          "COUNTY": "Apache",
+          "GEO_REG": "Southern Colorado Plateau",
+          "GEO_LOC": "Apache",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -109.2880365892322,
+            34.577733684670214
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD122",
+          "PROJECT": "Navopache Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Navopache Electric Cooperative Inc.",
+          "STATE": "Arizona",
+          "COUNTY": "Apache",
+          "GEO_REG": "Southern Colorado Plateau",
+          "GEO_LOC": "Apache",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -109.214225368775,
+            33.953572042973676
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -109.2511309790036,
+        34.26565286382194
+      ]
+    }
+  },
+  {
+    "name": "Lander",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD007",
+          "PROJECT": "Argenta",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Lander",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Lander",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.74892402896565,
+            40.64277805826092
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD109",
+          "PROJECT": "McCoy Geothermal Power Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Lander",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Lander",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.48334053960662,
+            39.81453198503598
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD155",
+          "PROJECT": "Reese River Geothermal - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 24,
+          "DEVELOPER": "Ram power",
+          "STATE": "Nevada",
+          "COUNTY": "Lander",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Lander",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 078688, NVN 088438, NVN 077247, NVN 082316, NVN 083889, NVN 085110, NVN 076676, NVN 078687, NVN 085169X",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.15432112157414,
+            39.89398940455458
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD170",
+          "PROJECT": "Smith Creek",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Lander",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Lander",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.54924708137786,
+            39.31273887572468
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD175",
+          "PROJECT": "Spencer Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 14,
+          "DEVELOPER": "Sierra Geothermal Power Corporation",
+          "STATE": "Nevada",
+          "COUNTY": "Lander",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Lander",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 077778, NVN 077779, NVN 077780",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.8597948468986,
+            39.32690570246056
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.15912552368457,
+        39.798188805207346
+      ]
+    }
+  },
+  {
+    "name": "Greenlee",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD008",
+          "PROJECT": "Arizona",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Arizona",
+          "COUNTY": "Greenlee",
+          "GEO_REG": "Rio Grand Rift",
+          "GEO_LOC": "Greenlee",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -109.29050038518628,
+            33.085083969165666
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD030",
+          "PROJECT": "Clifton Hot Springs Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 20,
+          "DEVELOPER": "Arizona Public Service Company",
+          "STATE": "Arizona",
+          "COUNTY": "Greenlee",
+          "GEO_REG": "Rio Grand Rift",
+          "GEO_LOC": "Greenlee",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 AZA 032989",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -109.30322999761562,
+            33.078308530291984
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -109.29686519140094,
+        33.08169624972882
+      ]
+    }
+  },
+  {
+    "name": "Mineral",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD009",
+          "PROJECT": "Aurora",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2(GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 088208",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.80301124750282,
+            38.21183271691651
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD062",
+          "PROJECT": "Gabbs Valley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 30,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.20071579489861,
+            38.96452238088345
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD072",
+          "PROJECT": "Hawthorne - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 14,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 077983, NVN 077984, NVN 077985",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.67232740377261,
+            38.508514813051875
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD073",
+          "PROJECT": "Hawthorne Army Depot",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.64245387782958,
+            38.50625633342731
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD074",
+          "PROJECT": "Hawthorne Geothermal Project (Whiskey Flats)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM  LR 2000 NVN 086710, NVN 085711, NVN 086875",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.59194606077124,
+            38.30607291215951
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD181",
+          "PROJECT": "Teels Marsh",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Discontinued",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 0,
+          "DEVELOPER": "Caldera Geothermal",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.4098304764999,
+            38.18473096142179
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD199",
+          "PROJECT": "Walker River Paiute",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Mineral",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mineral",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.57295430029198,
+            38.95076618680659
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.55617702308095,
+        38.51895661495242
+      ]
+    }
+  },
+  {
+    "name": "Siskiyou",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD010",
+          "PROJECT": "Bald Mountain Geothermal (Project California)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Siskiyou",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Siskiyou",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.78502561723984,
+            41.9175871481602
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD061",
+          "PROJECT": "Four Mile Hill Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Siskiyou",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Siskiyou",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": "BLM LR2000 CACA 001036, CACA 006111",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.60465522176932,
+            41.599141521097266
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD067",
+          "PROJECT": "Glass Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Active",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 0,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Siskiyou",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Siskiyou",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.57005942024765,
+            41.569986602307495
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD101",
+          "PROJECT": "Lower Klamath Wildlife Refuge",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 6,
+          "DEVELOPER": "Entiv Organic Energy",
+          "STATE": "California",
+          "COUNTY": "Siskiyou",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Siskiyou",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.7000246568246,
+            41.95002712822206
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD182",
+          "PROJECT": "Telephone Flat",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Active",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 0,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Siskiyou",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Siskiyou",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.5721125835427,
+            41.58210026574831
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.64637549992483,
+        41.72376853310707
+      ]
+    }
+  },
+  {
+    "name": "Lyon",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD011",
+          "PROJECT": "Barren Hills",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 46,
+          "DEVELOPER": "Sierra Geothermal Power Corporation",
+          "STATE": "Nevada",
+          "COUNTY": "Lyon",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Lyon",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 077600, NVN 077602, NVN 080598, NVN080601",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.17288861510688,
+            38.77398882710241
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -119.17288861510688,
+        38.77398882710241
+      ]
+    }
+  },
+  {
+    "name": "Imperial",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD012",
+          "PROJECT": "Black Rock 5 & 6 Geothermal Power Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Under Construction",
+          "CAP_MW": 235,
+          "DEVELOPER": "CalEnergy Company, Inc.",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.62071079833326,
+            33.172343409205475
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD013",
+          "PROJECT": "Black Rock I-2",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Under Construction",
+          "CAP_MW": 159,
+          "DEVELOPER": "CalEnergy Company, Inc.",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.62738357904219,
+            33.16618391932031
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD014",
+          "PROJECT": "Black Rock III",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 55,
+          "DEVELOPER": "CalEnergy Company, Inc.",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.61198485432928,
+            33.16043506209416
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD055",
+          "PROJECT": "East Brawley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Nevada Geothermal Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.35000121788033,
+            32.990022508604646
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD054",
+          "PROJECT": "East Brawley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 49.9,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.51825794991004,
+            33.01958806005343
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD080",
+          "PROJECT": "Hudson Ranch II Geo Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 49.9,
+          "DEVELOPER": "EnergySource LLC",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.55121122079566,
+            33.20190896065426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD084",
+          "PROJECT": "Keystone",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.54967134832438,
+            32.91385015035813
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD108",
+          "PROJECT": "MCAS Yuma Chocolate Mountains/Hot Minearl Spa",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.64196103843707,
+            33.40003921862701
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD117",
+          "PROJECT": "NAF El Centro/Superstition Hills",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.82181814308383,
+            32.96846429400657
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD118",
+          "PROJECT": "NAF El Centro/Superstition Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.81093637762005,
+            32.967232396029544
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD124",
+          "PROJECT": "New River",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.59997384905321,
+            32.90009395628126
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD125",
+          "PROJECT": "New Truckhaven",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Advanced Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 50,
+          "DEVELOPER": "Nevada Geothermal Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 CACA 043003",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.96820868602121,
+            33.254469941007656
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD139",
+          "PROJECT": "Orita 1",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 49.9,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.33562907481496,
+            33.001725539386456
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD140",
+          "PROJECT": "Orita 2",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 49.9,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.33562907481496,
+            33.001725539386456
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD141",
+          "PROJECT": "Orita 3",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 49.9,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.33562907481496,
+            33.001725539386456
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD161",
+          "PROJECT": "Salton Sea",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 76,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.59258246119101,
+            33.18897403189542
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD162",
+          "PROJECT": "Salton Sea Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "LADWP, SCPPA",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.5865256294706,
+            33.181377327703714
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD165",
+          "PROJECT": "San Felipe",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Esmeralda Truckhaven Geothermal LLC",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 CACA 043003",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.96820868602121,
+            33.254469941007656
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD213",
+          "PROJECT": "Truckhaven",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 30,
+          "DEVELOPER": "Alternative Earth Reseources (AER)",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.02559460011798,
+            33.218950216003215
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD208",
+          "PROJECT": "Wister (Imperial Valley)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 30,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "California",
+          "COUNTY": "Imperial",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Imperial",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.49392796486364,
+            33.29532789057924
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -115.61729228144699,
+        33.11294539507955
+      ]
+    }
+  },
+  {
+    "name": "Humboldt",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD015",
+          "PROJECT": "Blue Mountain 2",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Nevada Geothermal Power",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.14271393181333,
+            40.99510087969226
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD020",
+          "PROJECT": "Caldera Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 34,
+          "DEVELOPER": "Caldera Geothermal",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 085707",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.93246319325601,
+            41.79131760551436
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD056",
+          "PROJECT": "Edna Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Nevada Geothermal Power",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.39300135462422,
+            40.85220071435647
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD077",
+          "PROJECT": "Hot Pot Geothermal Project (Pumpernickel Valley)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 077000, NVN 086850, NVN 086912",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.10022026874947,
+            40.889568286326465
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD079",
+          "PROJECT": "Howard",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 088405",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.54000102940635,
+            41.7323918189463
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD082",
+          "PROJECT": "Hycroft",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.63578109712064,
+            40.96799912419754
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD110",
+          "PROJECT": "McGee Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Discontinued",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 0,
+          "DEVELOPER": "Caldera Geothermal",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.93184724426749,
+            41.79029102386683
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD150",
+          "PROJECT": "Pumpernickel Valley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 30,
+          "DEVELOPER": "Alternative Earth Reseources (AER)",
+          "STATE": "Nevada",
+          "COUNTY": "Humboldt",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Humboldt",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": "BLM LR2000 NVN 074855, NVN 078124, NVN 080070",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.49596749387119,
+            40.7702794988838
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.14649945163859,
+        41.223643618973
+      ]
+    }
+  },
+  {
+    "name": "Beaver",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD016",
+          "PROJECT": "Blundell",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Expansion)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 35,
+          "DEVELOPER": "PacifiCorp",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 UTU 014990, UTU 027388, UTU 027389, UTU 027392",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.85345730925893,
+            38.489009761748854
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD033",
+          "PROJECT": "Cove Fort (Oski)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "N/A",
+          "STATUS": "Active",
+          "PHASE": "N/A",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2012",
+          "BLM_PERMIT": "UTU 029557",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.56673305510458,
+            38.56826186493795
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD035",
+          "PROJECT": "Cove Fort 2 (Enel North America)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 20,
+          "DEVELOPER": "Enel Green Power North America, Inc.",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "UTU 029557",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.57710152974461,
+            38.56189705872328
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD184",
+          "PROJECT": "Thermo 2",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19541165605024,
+            38.16111958352867
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD210",
+          "PROJECT": "Thermo 3",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19541165605024,
+            38.16111958352867
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD185",
+          "PROJECT": "Thermo 4",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19541165605024,
+            38.16111958352867
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD186",
+          "PROJECT": "Thermo Central",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19541165605024,
+            38.16111958352867
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD187",
+          "PROJECT": "Thermo Greater",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": "Beaver",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Beaver",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.19541165605024,
+            38.16111958352867
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -112.99679377179493,
+        38.303095825381675
+      ]
+    }
+  },
+  {
+    "name": "Lake",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD017",
+          "PROJECT": "Bottle Rock Expansion",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Expansion)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 55,
+          "DEVELOPER": "Bottle Rock Power",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.78091247350598,
+            38.846876124076836
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD032",
+          "PROJECT": "Coldwater Creek Road Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 49,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.69088126301784,
+            38.718964050794945
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD216",
+          "PROJECT": "Crump Geyser Geothermal AER",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "Crump Geothermal Company, LLC, AER",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.88205121721867,
+            42.22638290773638
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD039",
+          "PROJECT": "Crump Geyser Geothermal Ormat",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Crump Geothermal Company, LLC, Ormat",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.88081931924164,
+            42.232747713951056
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD069",
+          "PROJECT": "Goose Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.31896436640625,
+            42.03892909889792
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD081",
+          "PROJECT": "HV",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "N/A",
+          "STATUS": "Active",
+          "PHASE": "N/A",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.80134144829178,
+            38.86371206309628
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD088",
+          "PROJECT": "KN",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.78460816743709,
+            38.87110345095848
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD094",
+          "PROJECT": "KS",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.78460816743709,
+            38.87110345095848
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD102",
+          "PROJECT": "Mahogany",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Transition Zone",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.12042347577449,
+            43.56340284547581
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD111",
+          "PROJECT": "Midnight Point",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.93799991700891,
+            43.5402021002417
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD130",
+          "PROJECT": "North Geysers Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 225,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Lake",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Lake",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000, CACA002611",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.74672730464333,
+            39.09489825011941
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD142",
+          "PROJECT": "Paisley Geothermal Power Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 4 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Under Construction",
+          "CAP_MW": 3,
+          "DEVELOPER": "Surprise Valley Electric Corp",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Transition Zone",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.5683210485906,
+            42.69409350634977
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD166",
+          "PROJECT": "Silver Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Transition Zone",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.88717730831256,
+            43.09630819585094
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD179",
+          "PROJECT": "Summer Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lake",
+          "GEO_REG": "Transition Zone",
+          "GEO_LOC": "Lake",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.64500669766089,
+            42.7250962721051
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.34498872675337,
+        41.09884428790093
+      ]
+    }
+  },
+  {
+    "name": "Churchill",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD018",
+          "PROJECT": "Brady EGS",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Phase 4 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Under Construction",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.0099701076443,
+            39.796053515380486
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD022",
+          "PROJECT": "Carson Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2(GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 079104, NVN 085819X",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.65641538823594,
+            39.38193047876801
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD023",
+          "PROJECT": "Carson Lake Basin Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 31,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.65641538823594,
+            39.38193047876801
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD027",
+          "PROJECT": "Churchill Geothermal Facility",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 6.6,
+          "DEVELOPER": "Terra-Gen Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.86101992773187,
+            39.962770374938906
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD036",
+          "PROJECT": "Coyote Canyon Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 67,
+          "DEVELOPER": "Terra-Gen Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000, NVN 043744, NVN O12862, NVN 012863, NVN 04328201",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.87077245338338,
+            39.962359742279894
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD044",
+          "PROJECT": "Desert Queen",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.82323490595911,
+            39.79892794399356
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD046",
+          "PROJECT": "Dixie Hope",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.08974231880093,
+            39.775316566100436
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD047",
+          "PROJECT": "Dixie Meadows (Comstock)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 30,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 087837X",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.00402275123241,
+            39.824181852522734
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD048",
+          "PROJECT": "Dixie Meadows Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 62,
+          "DEVELOPER": "Terra-Gen Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.10616762516136,
+            39.75950720872852
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD049",
+          "PROJECT": "Dixie Valley - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.08399346157478,
+            39.68908370770815
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD057",
+          "PROJECT": "Edwards Creek",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.76400796204055,
+            39.57574909382115
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD059",
+          "PROJECT": "Fireball",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Earth Power Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.10256777225126,
+            39.890909659612
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD212",
+          "PROJECT": "Harmon Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 15,
+          "DEVELOPER": "Enel Green Power North America, Inc.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": null,
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": "BLM LR2000 NVN 077158",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.65005058202128,
+            39.459334734991565
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD075",
+          "PROJECT": "Hazen",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Geothermal Rail Industrial Development, LLC",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.05462640931175,
+            39.57800757344571
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD089",
+          "PROJECT": "Kodali Dixie Valley 1",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.1619110086221,
+            39.59443287980614
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD090",
+          "PROJECT": "Kodali Dixie Valley 2",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 60,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.01942147594532,
+            39.71495356522584
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD097",
+          "PROJECT": "Lee Allen",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 81.5,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 074257, NVN 074258",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.72478572596125,
+            39.20823286400641
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD098",
+          "PROJECT": "Lee Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Earth Power Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.7281734453981,
+            39.21459767022108
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD120",
+          "PROJECT": "Naval Air Station Fallon Test Ranges/Dixie Valley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.08440409423379,
+            39.64288753356943
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD121",
+          "PROJECT": "Naval Air Station Fallon-Main",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.70856573593032,
+            39.42484159163465
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD131",
+          "PROJECT": "North Salt Wells",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 051956",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.5564263357668,
+            39.55152176693951
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD132",
+          "PROJECT": "North Valley Geothermal Project (Black Warrior)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 55,
+          "DEVELOPER": "Nevada Geothermal Power",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.19906644711882,
+            39.875305618569584
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD152",
+          "PROJECT": "Quieta",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.31435838327988,
+            39.680255105539416
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD158",
+          "PROJECT": "Salt Wells",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 60,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 079668",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.58363074942626,
+            39.37905605015494
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD159",
+          "PROJECT": "Salt Wells - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 96,
+          "DEVELOPER": "Sierra Geothermal Power Corporation",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.90936510618664,
+            39.469395235137334
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD160",
+          "PROJECT": "Salt Wells Geothermal Plant (Ormat)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 40,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 079105, NVN 085819X",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.67140348028984,
+            39.41929805073801
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD172",
+          "PROJECT": "Soda Lake Geothermal East",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 086870, NVN 013204X, NVN 086868, NVN 088857, NVN 088822",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.83832565617776,
+            39.55542277720011
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD173",
+          "PROJECT": "Soda Lake Geothermal South",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 086870, NVN 013204X, NVN 086868, NVN 088857, NVN 088822",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.83832565617776,
+            39.55542277720011
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD190",
+          "PROJECT": "Tungsten Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.69450838450295,
+            39.67512219730178
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD198",
+          "PROJECT": "Upsal Hogback",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Expansion)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Churchill",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.80742554858719,
+            39.640423737615365
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.48577014290633,
+        39.61457441173063
+      ]
+    }
+  },
+  {
+    "name": "Sonoma",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD019",
+          "PROJECT": "Buckeye Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Sonoma",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Sonoma",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.81899865262925,
+            38.84810802205387
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD066",
+          "PROJECT": "Geysers Unit 1",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 26,
+          "DEVELOPER": "Ram Power",
+          "STATE": "California",
+          "COUNTY": "Sonoma",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Sonoma",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.8818254494579,
+            38.82429132783124
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD176",
+          "PROJECT": "Squaw Creek Road Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 49,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Sonoma",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Sonoma",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "CACA 005634, CACA 001863",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.79795372885494,
+            38.82962955239838
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD205",
+          "PROJECT": "Wild Horse Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Calpine Corporation",
+          "STATE": "California",
+          "COUNTY": "Sonoma",
+          "GEO_REG": "Holocene Magmatic",
+          "GEO_LOC": "Sonoma",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.81899865262925,
+            38.84810802205387
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.82944412089284,
+        38.83753423108434
+      ]
+    }
+  },
+  {
+    "name": "Modoc",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD021",
+          "PROJECT": "Canby Cascaded Geothermal Development Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 0.25,
+          "DEVELOPER": "Canby Geothermal, LLC",
+          "STATE": "California",
+          "COUNTY": "Modoc",
+          "GEO_REG": "Transition Zone",
+          "GEO_LOC": "Modoc",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.87023871112835,
+            41.44392237599115
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD112",
+          "PROJECT": "Modoc SVR",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Advanced Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 30,
+          "DEVELOPER": "Surprise Valley Ranch, LLC",
+          "STATE": "California",
+          "COUNTY": "Modoc",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Modoc",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.13571954232265,
+            41.532824346667006
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD180",
+          "PROJECT": "Surprise Valley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 15,
+          "DEVELOPER": "Enel Green Power North America, Inc.",
+          "STATE": "California",
+          "COUNTY": "Modoc",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Modoc",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.20142076776439,
+            41.66012047096038
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD218",
+          "PROJECT": "Surprise Valley Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 1.5,
+          "DEVELOPER": "Commerstone Sustainable Energy/Warner Mountain Energy Corp.",
+          "STATE": "California",
+          "COUNTY": "Modoc",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Modoc",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.07669109758983,
+            41.53323497932602
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -120.32101752970131,
+        41.54252554323614
+      ]
+    }
+  },
+  {
+    "name": "Mono",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD024",
+          "PROJECT": "Casa Diablo 4",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 33,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "California",
+          "COUNTY": "Mono",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mono",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 CACA 011672, CACA 014407",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.91870699917915,
+            37.639205473925834
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD104",
+          "PROJECT": "Mammoth Phase IIB (CD4)",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 30,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "California",
+          "COUNTY": "Mono",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Mono",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.91090497865794,
+            37.64392774950446
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.91480598891854,
+        37.64156661171515
+      ]
+    }
+  },
+  {
+    "name": "Fairbanks North Star",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD025",
+          "PROJECT": "Chena Hot Springs Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Expansion)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Under Construction",
+          "CAP_MW": 0.4,
+          "DEVELOPER": "Chena Power LLC",
+          "STATE": "Alaska",
+          "COUNTY": "Fairbanks North Star",
+          "GEO_REG": null,
+          "GEO_LOC": "Fairbanks North Star",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -146.05156791781735,
+            65.0520152078447
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -146.05156791781735,
+        65.0520152078447
+      ]
+    }
+  },
+  {
+    "name": "Caribou",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD026",
+          "PROJECT": "China Cap",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 100,
+          "DEVELOPER": "Idatherm Llc",
+          "STATE": "Idaho",
+          "COUNTY": "Caribou",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Caribou",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 IDI 034553",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.51315231024742,
+            42.74973423164575
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD177",
+          "PROJECT": "Sulfur Springs Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 37.5,
+          "DEVELOPER": "Idatherm Llc",
+          "STATE": "Idaho",
+          "COUNTY": "Caribou",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Caribou",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM IDI 034352",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.49898548351155,
+            42.65323555677819
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.50606889687948,
+        42.70148489421197
+      ]
+    }
+  },
+  {
+    "name": "Pitkin",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD028",
+          "PROJECT": "City of Aspen Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "City of Aspen",
+          "STATE": "Colorado",
+          "COUNTY": "Pitkin",
+          "GEO_REG": "Southern Rocky Mountains",
+          "GEO_LOC": "Pitkin",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.81428279318591,
+            39.18934376169191
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -106.81428279318591,
+        39.18934376169191
+      ]
+    }
+  },
+  {
+    "name": "Pershing",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD031",
+          "PROJECT": "Colado",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000, NVN086763, NVN 079305, NVN 079306, NVN 079307, NVN 079352",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.3701017667406,
+            40.24446437902037
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD050",
+          "PROJECT": "Dixie Valley North",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.96922163338124,
+            40.59391277183863
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD070",
+          "PROJECT": "Granite Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Magma Energy Corp.",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.95802507627944,
+            40.23563577685164
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD096",
+          "PROJECT": "Leach Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.65108398081256,
+            40.60356263932538
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD100",
+          "PROJECT": "Lovelock",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Earth Power Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.39432909362225,
+            40.120453315999086
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD127",
+          "PROJECT": "New York Canyon (TGP) Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 70,
+          "DEVELOPER": "Terra-Gen Power",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 088412, NVN 088828X",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.10791281396216,
+            40.0192323655529
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD157",
+          "PROJECT": "Rye Patch",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 13,
+          "DEVELOPER": "Presco Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.26836752547067,
+            40.534986985270564
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD174",
+          "PROJECT": "Sou Hills",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Montara Energy Ventures",
+          "STATE": "Nevada",
+          "COUNTY": "Pershing",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Pershing",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.69430306817345,
+            40.0342204576068
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.17666811980529,
+        40.29830858643317
+      ]
+    }
+  },
+  {
+    "name": "Cricket",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD037",
+          "PROJECT": "Cricket",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.76999622131497,
+            39.049933973957714
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -112.76999622131497,
+        39.049933973957714
+      ]
+    }
+  },
+  {
+    "name": "Nye",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD040",
+          "PROJECT": "Darrough Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 0,
+          "DEVELOPER": "Great American Energy, LLC",
+          "STATE": "Nevada",
+          "COUNTY": "Nye",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Nye",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.19117540272038,
+            38.814025511355965
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD045",
+          "PROJECT": "Devils Canyon Geothermal Facility",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Nye",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Nye",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 083959",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.06695902336958,
+            38.86165889980123
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD169",
+          "PROJECT": "Silver State Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Nye",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Nye",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 073967, NVN 083959, NVN083960",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.18101224440986,
+            38.82018500124113
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD188",
+          "PROJECT": "Trail Canyon Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Nye",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Nye",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": "BLM LR2000 NVN 077801, NVN 083961, NVN 083962",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.19918273957109,
+            38.89574141049913
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD189",
+          "PROJECT": "Truckee No. 1",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Nye",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Nye",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 083961",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.1526785909381,
+            38.924896329288906
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.1582016002018,
+        38.863301430437275
+      ]
+    }
+  },
+  {
+    "name": "DeArmand",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD041",
+          "PROJECT": "DeArmand",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.69001869382885,
+            37.840004844182154
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -113.69001869382885,
+        37.840004844182154
+      ]
+    }
+  },
+  {
+    "name": "Elko",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD042",
+          "PROJECT": "Delcer Butte",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 24,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.87992948147763,
+            40.37894657484643
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD105",
+          "PROJECT": "Mary's River",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.2673613952544,
+            41.227518964692415
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD106",
+          "PROJECT": "Mary's River SW",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.36509196809898,
+            41.088930442276244
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD146",
+          "PROJECT": "Pilot Peak",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.07775858209988,
+            41.02097073720994
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD191",
+          "PROJECT": "Tuscarora - Phase II",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.17311438286764,
+            41.45726793740901
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD201",
+          "PROJECT": "Wells - SGP",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Elko",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Elko",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.49279872505137,
+            40.879097153521684
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -115.20934242247496,
+        41.00878863499262
+      ]
+    }
+  },
+  {
+    "name": "Millard",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD051",
+          "PROJECT": "Drum Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Utah",
+          "COUNTY": "Millard",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Millard",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.14767560944023,
+            39.52503596043331
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD091",
+          "PROJECT": "Kodali Millard",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 150,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Utah",
+          "COUNTY": "Millard",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Millard",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.66405299529016,
+            38.64279169254843
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -112.90586430236519,
+        39.08391382649087
+      ]
+    }
+  },
+  {
+    "name": "Fallon",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD211",
+          "PROJECT": "Fallon",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Churchill",
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": null,
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.65005058202128,
+            39.380082631802466
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -118.65005058202128,
+        39.380082631802466
+      ]
+    }
+  },
+  {
+    "name": "Falstaff",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD058",
+          "PROJECT": "Falstaff",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Unconfirmed",
+          "STATUS": "Discontinued",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 20,
+          "DEVELOPER": "Verdi Energy",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.000002240451877,
+            0
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.000002240451877,
+        0
+      ]
+    }
+  },
+  {
+    "name": "Lane",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD060",
+          "PROJECT": "Foley Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Oregon",
+          "COUNTY": "Lane",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Lane",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.04895975881908,
+            44.19290271173949
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -122.04895975881908,
+        44.19290271173949
+      ]
+    }
+  },
+  {
+    "name": "Washoe",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD063",
+          "PROJECT": "Gerlach",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 25,
+          "DEVELOPER": "Ram Power",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Washoe",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 077268",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.36198495458139,
+            40.662899058552455
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD064",
+          "PROJECT": "Gerlach Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 18,
+          "DEVELOPER": "U.S. Geothermal Inc.;Gerlach Green Energy LLC",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Washoe",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 055718, NVN 075228",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.36660457199527,
+            40.661667160575426
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD065",
+          "PROJECT": "Gerlach Power",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 60,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Washoe",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.33519117358092,
+            40.66618411982454
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD151",
+          "PROJECT": "Pyramid Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 0,
+          "DEVELOPER": "Pyramid Lake Paiute Tribe",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Washoe",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.4811710838593,
+            40.006913385782575
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD163",
+          "PROJECT": "San Emidio North Project - Phase III",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 24.6,
+          "DEVELOPER": "U.S. Geothermal Inc.",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Washoe",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 042707, NVN 047169, NVN 063004, NVN 063006, NVN 063007, NVN 075557",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.40581999093081,
+            40.36950202368918
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD164",
+          "PROJECT": "San Emidio South Project - Phase II",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 12.7,
+          "DEVELOPER": "U.S. Geothermal Inc.",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": "Northwest Basin & Range",
+          "GEO_LOC": "Washoe",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 NVN 042707, NVN 047169, NVN 063004, NVN 063006, NVN 063007, NVN 075557",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.4054093582718,
+            40.36950202368918
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -119.39269685553658,
+        40.45611129535223
+      ]
+    }
+  },
+  {
+    "name": "Goliad",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD068",
+          "PROJECT": "Goliad Coproduction",
+          "FUEL": "Geothermal",
+          "TECH": "Hydrocarbon Co-production (CoPro)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0.8,
+          "DEVELOPER": "Universal Geo Power",
+          "STATE": "Texas",
+          "COUNTY": "Goliad",
+          "GEO_REG": null,
+          "GEO_LOC": "Goliad",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.42126603464152,
+            28.623149496353435
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -97.42126603464152,
+        28.623149496353435
+      ]
+    }
+  },
+  {
+    "name": "Granite Creek",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD217",
+          "PROJECT": "Granite Creek",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "U.S. Geothermal",
+          "STATE": "Nevada",
+          "COUNTY": "Washoe",
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.2278243675371,
+            41.05854362550944
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.2278243675371,
+        41.05854362550944
+      ]
+    }
+  },
+  {
+    "name": "Bonneville",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD071",
+          "PROJECT": "Grays Lake",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Eureka Green Systems",
+          "STATE": "Idaho",
+          "COUNTY": "Bonneville",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Bonneville",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.45083880424252,
+            43.12443653299318
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.45083880424252,
+        43.12443653299318
+      ]
+    }
+  },
+  {
+    "name": "Hill Air Force Base",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD076",
+          "PROJECT": "Hill Air Force Base",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.96998114339702,
+            41.24004326079225
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.96998114339702,
+        41.24004326079225
+      ]
+    }
+  },
+  {
+    "name": "Eureka",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD078",
+          "PROJECT": "Hot Springs Point",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Onhold",
+          "STATUS": "Active",
+          "PHASE": null,
+          "CAP_MW": 0,
+          "DEVELOPER": "Earth Power Resources",
+          "STATE": "Nevada",
+          "COUNTY": "Eureka",
+          "GEO_REG": "Central Nevada Seismic Zone",
+          "GEO_LOC": "Eureka",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.51486341332945,
+            40.40173668742153
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -116.51486341332945,
+        40.40173668742153
+      ]
+    }
+  },
+  {
+    "name": "Santa Rosa",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD083",
+          "PROJECT": "Jay Oilfield",
+          "FUEL": "Geothermal",
+          "TECH": "Hydrocarbon Co-Production (CoPro)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 1,
+          "DEVELOPER": "Chena Power LLC",
+          "STATE": "Florida",
+          "COUNTY": "Santa Rosa",
+          "GEO_REG": null,
+          "GEO_LOC": "Santa Rosa",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -87.1795742280864,
+            30.963345020056444
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -87.1795742280864,
+        30.963345020056444
+      ]
+    }
+  },
+  {
+    "name": "Klamath",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD085",
+          "PROJECT": "Klamath Falls Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 1,
+          "DEVELOPER": "Klamath Falls, City of",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.77486245892932,
+            42.22925733634946
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD086",
+          "PROJECT": "Klamath Geothermal No.1",
+          "FUEL": "Geothermal",
+          "TECH": "Unconfirmed",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.63966165595,
+            42.05843415020094
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD087",
+          "PROJECT": "Klamath Hills",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 8,
+          "DEVELOPER": "Entiv Organic Energy",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.7571025964271,
+            42.09190071191032
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD135",
+          "PROJECT": "Olene Gap",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "N/A",
+          "STATUS": "Active",
+          "PHASE": "N/A",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.60640041057012,
+            42.186756856141834
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD136",
+          "PROJECT": "Olene KBG",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Klamath Basin Geopower",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.61861673217568,
+            42.174232560042
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD137",
+          "PROJECT": "OM Power",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 11,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.61871939034043,
+            42.15944978431761
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD138",
+          "PROJECT": "Oregon Institute Campus II Cogen",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Expansion)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 1.75,
+          "DEVELOPER": "Oregon Institute of Technology campus",
+          "STATE": "Oregon",
+          "COUNTY": "Klamath",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Klamath",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.7814325814735,
+            42.25430592854912
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.68525654655231,
+        42.16490533250162
+      ]
+    }
+  },
+  {
+    "name": "Cassia",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD092",
+          "PROJECT": "Kodali Raft River",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Kodali, INC.",
+          "STATE": "Idaho",
+          "COUNTY": "Cassia",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Cassia",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.3980588732721,
+            42.15287966177344
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD134",
+          "PROJECT": "Oakley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Eureka Green Systems",
+          "STATE": "Idaho",
+          "COUNTY": "Cassia",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Cassia",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.88003895678614,
+            42.23993378548374
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD153",
+          "PROJECT": "Raft River II",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 16.6,
+          "DEVELOPER": "U.S. Geothermal Inc.",
+          "STATE": "Idaho",
+          "COUNTY": "Cassia",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Cassia",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": "BLM LR2000 IDI 035787",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.38235217406495,
+            42.099497416102025
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD154",
+          "PROJECT": "Raft River III",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Produced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 16.6,
+          "DEVELOPER": "U.S. Geothermal Inc.",
+          "STATE": "Idaho",
+          "COUNTY": "Cassia",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Cassia",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": "BLM LR2000 IDI 035787",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.38235217406495,
+            42.099497416102025
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -113.51070054454703,
+        42.14795206986531
+      ]
+    }
+  },
+  {
+    "name": "Hawaii",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD093",
+          "PROJECT": "`",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Hawaii",
+          "COUNTY": "Hawaii",
+          "GEO_REG": null,
+          "GEO_LOC": "Hawaii",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -155.99688560273137,
+            19.642613243785476
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -155.99688560273137,
+        19.642613243785476
+      ]
+    }
+  },
+  {
+    "name": "Maui",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD095",
+          "PROJECT": "Kula",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Hawaii",
+          "COUNTY": "Maui",
+          "GEO_REG": null,
+          "GEO_LOC": "Maui",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -156.32693160241135,
+            20.790947474709405
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD194",
+          "PROJECT": "Ulupalakua Ranch Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Hawaii",
+          "COUNTY": "Maui",
+          "GEO_REG": null,
+          "GEO_LOC": "Maui",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -156.35495728138886,
+            20.669810840301196
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -156.3409444419001,
+        20.7303791575053
+      ]
+    }
+  },
+  {
+    "name": "Riverside",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD107",
+          "PROJECT": "MCAS Yuma Chocolate Mountains/Glamis",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Navy Geothermal Program",
+          "STATE": "California",
+          "COUNTY": "Riverside",
+          "GEO_REG": "Gulf of California Rift Zone",
+          "GEO_LOC": "Riverside",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.695959233097,
+            33.45198424999189
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -115.695959233097,
+        33.45198424999189
+      ]
+    }
+  },
+  {
+    "name": "Whatcom",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD113",
+          "PROJECT": "Mount Baker",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "Washington",
+          "COUNTY": "Whatcom",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Whatcom",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 WAOR 056027, WAOR 056028",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.73051413175615,
+            48.7145842364378
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.73051413175615,
+        48.7145842364378
+      ]
+    }
+  },
+  {
+    "name": "Chaffee",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD114",
+          "PROJECT": "Mount Princeton Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "Mt. Princeton Geothermal LLC",
+          "STATE": "Colorado",
+          "COUNTY": "Chaffee",
+          "GEO_REG": "Rio Grand Rift",
+          "GEO_LOC": "Chaffee",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": "BLM LR2000 COC 073714",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.16230078884138,
+            38.734362775507854
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD147",
+          "PROJECT": "Poncha Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 10,
+          "DEVELOPER": "Mt. Princeton Geothermal LLC",
+          "STATE": "Colorado",
+          "COUNTY": "Chaffee",
+          "GEO_REG": "Rio Grand Rift",
+          "GEO_LOC": "Chaffee",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.07668387943761,
+            38.49660646594056
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -106.1194923341395,
+        38.6154846207242
+      ]
+    }
+  },
+  {
+    "name": "Kenai Peninsula",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD115",
+          "PROJECT": "Mount Spurr Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Alaska",
+          "COUNTY": "Kenai Peninsula",
+          "GEO_REG": null,
+          "GEO_LOC": "Kenai Peninsula",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -152.27183143651416,
+            61.22491882586329
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -152.27183143651416,
+        61.22491882586329
+      ]
+    }
+  },
+  {
+    "name": "Mustang",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD116",
+          "PROJECT": "Mustang",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Nevada",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.000002240451877,
+            0
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.000002240451877,
+        0
+      ]
+    }
+  },
+  {
+    "name": "Bristol Bay",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD119",
+          "PROJECT": "Naknek Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Unconfirmed",
+          "CAP_MW": 25,
+          "DEVELOPER": "Naknek Electric Assn, Inc",
+          "STATE": "Alaska",
+          "COUNTY": "Bristol Bay",
+          "GEO_REG": null,
+          "GEO_LOC": "Bristol Bay",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -157.00786320921614,
+            58.7307360550312
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -157.00786320921614,
+        58.7307360550312
+      ]
+    }
+  },
+  {
+    "name": "Malheur",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD123",
+          "PROJECT": "Neal Hot Springs Geothermal II",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "U.S. Geothermal Inc.",
+          "STATE": "Oregon",
+          "COUNTY": "Malheur",
+          "GEO_REG": "Snake River Plain",
+          "GEO_LOC": "Malheur",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 OROR 066192, OROR 063899",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.47020029451826,
+            44.03316660738426
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.47020029451826,
+        44.03316660738426
+      ]
+    }
+  },
+  {
+    "name": "Deschutes",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD128",
+          "PROJECT": "Newberry Demonstration EGS  Project",
+          "FUEL": "Geothermal",
+          "TECH": "Enhanced Geothermal Systems (EGS)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 30,
+          "DEVELOPER": "Davenport Newberry Holdings",
+          "STATE": "Oregon",
+          "COUNTY": "Deschutes",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Deschutes",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM LR2000 OROR 012397, OROR 012399",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.31587780431991,
+            43.71677414361638
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD192",
+          "PROJECT": "Twilight",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies, Nevada Geothermal Power",
+          "STATE": "Oregon",
+          "COUNTY": "Deschutes",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Deschutes",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.22882368060961,
+            43.7894561242613
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.27235074246477,
+        43.753115133938834
+      ]
+    }
+  },
+  {
+    "name": "Fremont",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD129",
+          "PROJECT": "Newdale",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Idaho",
+          "COUNTY": "Fremont",
+          "GEO_REG": "Snake River Plain",
+          "GEO_LOC": "Fremont",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.60564731668961,
+            43.88431226849281
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.60564731668961,
+        43.88431226849281
+      ]
+    }
+  },
+  {
+    "name": "Northern California",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD133",
+          "PROJECT": "Northern California",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Gradient Resources",
+          "STATE": "California",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.000002240451877,
+            0
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.000002240451877,
+        0
+      ]
+    }
+  },
+  {
+    "name": "Payette",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD143",
+          "PROJECT": "Parma",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Idaho",
+          "COUNTY": "Payette",
+          "GEO_REG": "Snake River Plain",
+          "GEO_LOC": "Payette",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.84634662731598,
+            43.862548737565234
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -116.84634662731598,
+        43.862548737565234
+      ]
+    }
+  },
+  {
+    "name": "Nome",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD145",
+          "PROJECT": "Pilgrim Hot Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 5,
+          "DEVELOPER": "Alaska Center for Energy and Power (Research); Unaatuq (Land Owner)",
+          "STATE": "Alaska",
+          "COUNTY": "Nome",
+          "GEO_REG": null,
+          "GEO_LOC": "Nome",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -164.92496353311068,
+            65.09205189209825
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -164.92496353311068,
+        65.09205189209825
+      ]
+    }
+  },
+  {
+    "name": "Franklin",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD148",
+          "PROJECT": "Preston Area Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Idatherm Llc",
+          "STATE": "Idaho",
+          "COUNTY": "Franklin",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Franklin",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.94688305632766,
+            42.095391089511914
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD149",
+          "PROJECT": "Preston Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 100,
+          "DEVELOPER": "Northwestern Band of the Shoshone Nation",
+          "STATE": "Idaho",
+          "COUNTY": "Franklin",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Franklin",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.9053064996028,
+            42.14199789630965
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD183",
+          "PROJECT": "Thatcher",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Eureka Green Systems",
+          "STATE": "Idaho",
+          "COUNTY": "Franklin",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Franklin",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.7292477470519,
+            42.41075697163227
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.86047910099411,
+        42.21604865248461
+      ]
+    }
+  },
+  {
+    "name": "Cache",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD156",
+          "PROJECT": "Renaissance Geothermal",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 100,
+          "DEVELOPER": "Idatherm Llc",
+          "STATE": "Utah",
+          "COUNTY": "Cache",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Cache",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.72811850723961,
+            41.60386379667589
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.72811850723961,
+        41.60386379667589
+      ]
+    }
+  },
+  {
+    "name": "Snohomish",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD171",
+          "PROJECT": "Snohomish County Geothermal Plant",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 50,
+          "DEVELOPER": "Snohomish County Public Utility District No. 1",
+          "STATE": "Washington",
+          "COUNTY": "Snohomish",
+          "GEO_REG": "Cascades",
+          "GEO_LOC": "Snohomish",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.35796765186853,
+            47.93397155165812
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.35796765186853,
+        47.93397155165812
+      ]
+    }
+  },
+  {
+    "name": "Twin Falls",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD193",
+          "PROJECT": "Twin Falls Oakley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Eureka Green Systems",
+          "STATE": "Idaho",
+          "COUNTY": "Twin Falls",
+          "GEO_REG": "Snake River Plain",
+          "GEO_LOC": "Twin Falls",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.62995685030475,
+            42.560021943182726
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -114.62995685030475,
+        42.560021943182726
+      ]
+    }
+  },
+  {
+    "name": "Aleutians West",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD195",
+          "PROJECT": "Unalaska Makushin Geothermal Project",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Early Development (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 10,
+          "DEVELOPER": "Unalaska City of",
+          "STATE": "Alaska",
+          "COUNTY": "Aleutians West",
+          "GEO_REG": null,
+          "GEO_LOC": "Aleutians West",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -166.513188,
+            53.862685882457214
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -166.513188,
+        53.862685882457214
+      ]
+    }
+  },
+  {
+    "name": "Stark",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD196",
+          "PROJECT": "UND Coproduction",
+          "FUEL": "Geothermal",
+          "TECH": "Hydrocarbon Co-production (CoPro)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0.25,
+          "DEVELOPER": "University of North Dakota",
+          "STATE": "North Dakota",
+          "COUNTY": "Stark",
+          "GEO_REG": null,
+          "GEO_LOC": "Stark",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.79234121450384,
+            46.879261566988674
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -102.79234121450384,
+        46.879261566988674
+      ]
+    }
+  },
+  {
+    "name": "Slope",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD197",
+          "PROJECT": "UND Low Temperature Project",
+          "FUEL": "Geothermal",
+          "TECH": "Hydrocarbon Co-production (CoPro)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0.35,
+          "DEVELOPER": "University of North Dakota",
+          "STATE": "North Dakota",
+          "COUNTY": "Slope",
+          "GEO_REG": null,
+          "GEO_LOC": "Slope",
+          "DATE": "GEA 2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -103.0000186817986,
+            46.500042306392125
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -103.0000186817986,
+        46.500042306392125
+      ]
+    }
+  },
+  {
+    "name": "Silver Bowl",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD214",
+          "PROJECT": "Warm Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 3 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Advanced Resource Development",
+          "CAP_MW": 0,
+          "DEVELOPER": "Geopresured Systems",
+          "STATE": "Montana",
+          "COUNTY": "Silver Bowl",
+          "GEO_REG": "??",
+          "GEO_LOC": "Silver Bowl",
+          "DATE": "GEA2014",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.53449839137224,
+            46.003998054306976
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -112.53449839137224,
+        46.003998054306976
+      ]
+    }
+  },
+  {
+    "name": "Washington",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD200",
+          "PROJECT": "Weiser",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Standard Steam Trust",
+          "STATE": "Idaho",
+          "COUNTY": "Washington",
+          "GEO_REG": "Idaho Batholith",
+          "GEO_LOC": "Washington",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.06808826318186,
+            44.30890643791007
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -117.06808826318186,
+        44.30890643791007
+      ]
+    }
+  },
+  {
+    "name": "Lassen",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD202",
+          "PROJECT": "Wendel Expansion",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Oski Energy",
+          "STATE": "California",
+          "COUNTY": "Lassen",
+          "GEO_REG": "Walker Lane Transtenstional Zone",
+          "GEO_LOC": "Lassen",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.2550083297653,
+            40.35738836024836
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -120.2550083297653,
+        40.35738836024836
+      ]
+    }
+  },
+  {
+    "name": "Whirlwind Valley",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD203",
+          "PROJECT": "Whirlwind Valley",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 1 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Ormat Technologies",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.88003895678614,
+            39.44003500001806
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -113.88003895678614,
+        39.44003500001806
+      ]
+    }
+  },
+  {
+    "name": "Adams",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD204",
+          "PROJECT": "White Mountain",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Phase 2 (GEA)",
+          "STATUS": "Discontinued",
+          "PHASE": "Advanced Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Eureka Green Systems",
+          "STATE": "Idaho",
+          "COUNTY": "Adams",
+          "GEO_REG": "Idaho Batholith",
+          "GEO_LOC": "Adams",
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.59000918992844,
+            45.18293805261472
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -116.59000918992844,
+        45.18293805261472
+      ]
+    }
+  },
+  {
+    "name": "Bingham",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD207",
+          "PROJECT": "Willow Springs",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Announced (SNL)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 100,
+          "DEVELOPER": "Idatherm Llc",
+          "STATE": "Idaho",
+          "COUNTY": "Bingham",
+          "GEO_REG": "Northern Basin & Range",
+          "GEO_LOC": "Bingham",
+          "DATE": "SNL 2013",
+          "BLM_PERMIT": "BLM IDI 034708",
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.66549702674045,
+            43.281298208735336
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -111.66549702674045,
+        43.281298208735336
+      ]
+    }
+  },
+  {
+    "name": "Wood Ranch",
+    "plants": [
+      {
+        "type": "Feature",
+        "properties": {
+          "UID": "UD209",
+          "PROJECT": "Wood Ranch",
+          "FUEL": "Geothermal",
+          "TECH": "Conventional Hydrothermal (Unproduced)",
+          "STATUS_GEA": "Prospect (GEA)",
+          "STATUS": "Active",
+          "PHASE": "Early Exploration",
+          "CAP_MW": 0,
+          "DEVELOPER": "Cyrq Energy",
+          "STATE": "Utah",
+          "COUNTY": null,
+          "GEO_REG": null,
+          "GEO_LOC": null,
+          "DATE": "GEA 2013",
+          "BLM_PERMIT": null,
+          "C18": null
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.5900296413597,
+            37.93999389665131
+          ]
+        }
+      }
+    ],
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -113.5900296413597,
+        37.93999389665131
+      ]
+    }
+  }
+]

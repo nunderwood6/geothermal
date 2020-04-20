@@ -1,17 +1,22 @@
-      /////Aggregate by Geothermal Area//////////
+      
+      d3.json("data/developing_plants.geojson").then(function(data){
+
+        developing = data.features;
+
+         /////Aggregate by Geothermal Area//////////
       var geoAreaNames = [];
       var geoAreas = [];
 
       //add areas
-      for(var plant of operating){
+      for(var plant of developing){
           console.log(plant);
-          var area = plant.properties["GEO_AREA"];
+          var area = plant.properties["GEO_LOC"];
           //add objects for each area
           //for plants without area
           if(area==null) {
-            geoAreaNames.push(plant.properties["PLANT_NAME"]);
+            geoAreaNames.push(plant.properties["PROJECT"]);
             geoAreas.push({
-              "name": plant.properties["PLANT_NAME"],
+              "name": plant.properties["PROJECT"],
               "plants": []
             });
           }
@@ -30,12 +35,12 @@
 
 
       //add plants to areas
-      for(var plant of operating){
+      for(var plant of developing){
         console.log(plant);
-        var areaName = plant.properties["GEO_AREA"];
+        var areaName = plant.properties["GEO_LOC"];
         if(areaName == null){
           console.log("here!")
-           var areaName = plant.properties["PLANT_NAME"];
+           var areaName = plant.properties["PROJECT"];
         }
         console.log(areaName);
         for(var area of geoAreas){
@@ -56,12 +61,8 @@
               longitudes.push(longlat[0]);
               latitudes.push(longlat[1]);
           }
-          console.log(longitudes);
-          console.log(latitudes);
           var meanLong = d3.mean(longitudes);
           var meanLat = d3.mean(latitudes);
-          console.log(meanLong);
-          console.log(meanLat);
         area.geometry = {
           "type": "Point",
           "coordinates": [meanLong,meanLat]
@@ -69,3 +70,7 @@
       }
 
       console.log(geoAreas);
+
+      })
+
+     

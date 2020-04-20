@@ -86,8 +86,13 @@
                 <div class="spacer"></div>
 
                 <div class="discrete step" forward='zoomToOperating' backward='zoomOut'>
-                    <h3>Developing plants</h3>
                     <p>Even with these limitations, geothermal has been making gains. The Geysers area north of San Francisco is the largest geothermal producer in the world, and total production was projected to double in 2014.</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="discrete step" forward='addDeveloping' backward='removeDeveloping'>
+                    <p>Look at all these new geothermal power plants in the works.</p>
                 </div>
 
                 <div class="spacer"></div>
@@ -139,7 +144,8 @@
         </ul>
 
         <script src="lib/helpers/wrapText.js"></script>
-        <script src="data/geoAreas.txt"></script>
+        <script type="text/javascript" src="data/geoAreas.txt"></script>
+        <script type="text/javascript" src="data/developingGeoAreas.txt"></script>
         <script src="lib/enter-view.js"></script>
         <script src="lib/topojson.min.js"></script>
        <script src="lib/d3-geo-projection.min.js"></script>

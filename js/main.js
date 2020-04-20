@@ -186,11 +186,16 @@ var images = depthGroup.selectAll(".stack")
     ])
     .then(function([boxJSON,states_topoJSON,operatingJSON,forgeJSON]){
 
+      // console.log(geoAreas);
+
     	var box = boxJSON.features;
     	var states = topojson.feature(states_topoJSON, states_topoJSON.objects.states).features;
-      var operating = operatingJSON.features.sort(function(a,b){
-          return b.properties["CAP_MW"] - a.properties["CAP_MW"];
-      });
+      // var geoAreas = geoAreas.sort(function(a,b){
+      //     return b.properties["CAP_MW"] - a.properties["CAP_MW"];
+      // });
+      // var developingGeoAreas = developingGeoAreas.sort(function(a,b){
+      //     return b.properties["CAP_MW"] - a.properties["CAP_MW"];
+      // });
       var forge = forgeJSON.features;
 
       var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
@@ -264,6 +269,23 @@ var images = depthGroup.selectAll(".stack")
                         .text(function(d){
                             return d.properties["postal"];
                         })
+
+
+            console.log(geoAreas);
+
+            geoAreas.sort(function(a,b){
+                var bValues = b.plants.map(i=>i.properties["CAP_MW"])
+                var aValues = a.plants.map(i=>i.properties["CAP_MW"])
+                return d3.sum(bValues) - d3.sum(aValues);
+            });
+
+            developingGeoAreas.sort(function(a,b){
+                var bValues = b.plants.map(i=>i.properties["CAP_MW"])
+                var aValues = a.plants.map(i=>i.properties["CAP_MW"])
+                return d3.sum(bValues) - d3.sum(aValues);
+            });
+
+            
 		
       var geoAreaSymbols = plantsGroup.append("g")
                     .attr("class", "operatingGroup")
@@ -271,6 +293,8 @@ var images = depthGroup.selectAll(".stack")
                     .data(geoAreas)
                     .enter()
                     .append("circle")
+                      .attr("class", "operating")
+                      .attr("opacity", 1)
                       .attr("cx", function(d){
                         return albers(d.geometry.coordinates)[0];
                     })
@@ -288,6 +312,32 @@ var images = depthGroup.selectAll(".stack")
                       .attr("fill-opacity", 0.8)
                       .attr("stroke", "#c9e5f5")
                       .attr("stroke-width", 0.2);
+
+      var developingGeoAreaSymbols = plantsGroup.append("g")
+                    .attr("class", "developingGroup")
+                    .selectAll(".developing")
+                    .data(developingGeoAreas)
+                    .enter()
+                    .append("circle")
+                      .attr("class", "developing")
+                      .attr("cx", function(d){
+                        return albers(d.geometry.coordinates)[0];
+                    })
+                      .attr("cy", function(d){
+                          return albers(d.geometry.coordinates)[1];
+                      })
+                      .attr("r", function(d){
+                        var totalMW= 0;
+                        for(var plant of d.plants){
+                            totalMW+=plant.properties["CAP_MW"];
+                        }
+                        return rScale(totalMW);
+                      })
+                      .attr("fill", "#865cb5")
+                      .attr("fill-opacity", 0.8)
+                      .attr("stroke", "#cfb1f0")
+                      .attr("stroke-width", 0.2)
+                      .attr("opacity", 0);
 
     var legendValues = [100,500,1000];
     var legendSize = rScale.range()[1]*2.2+20;
@@ -400,7 +450,6 @@ var updateChart = {
                         for(var plant of d.plants){
                             totalMW+=plant.properties["CAP_MW"];
                         }
-                        console.log(rScale(totalMW));
                         return rScale(totalMW);
                       });
 
@@ -409,11 +458,30 @@ var updateChart = {
   },
   addDeveloping: function(){
     console.log("add developing!");
+    //fade in developing
+    plantsGroup.selectAll(".developing")
+              .transition("fadeIn")
+              .duration(1500)
+              .attr("opacity", 1);
+    //fade out operating
+    plantsGroup.selectAll(".operating")
+              .transition("fadeOut")
+              .duration(1500)
+              .attr("opacity", 0);
 
   },
   removeDeveloping: function(){
     console.log("remove developing!");
-
+    //fade out developing
+    plantsGroup.selectAll(".developing")
+              .transition("fadeOut")
+              .duration(1500)
+              .attr("opacity", 0);
+    //fade in operating
+    plantsGroup.selectAll(".operating")
+              .transition("fadeIn")
+              .duration(1500)
+              .attr("opacity", 1);
 
 
   },
