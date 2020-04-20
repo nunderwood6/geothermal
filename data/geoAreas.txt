@@ -1,5 +1,6 @@
 var geoAreas = [
   {
+    "type": "Feature",
     "name": "Coso Geothermal Area",
     "plants": [
       {
@@ -112,6 +113,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Geysers Geothermal Area",
     "plants": [
       {
@@ -574,6 +576,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Salton Sea Geothermal Area",
     "plants": [
       {
@@ -836,6 +839,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "John L. Featherstone (Hudson Ranch 1)",
     "plants": [
       {
@@ -873,6 +877,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Dixie Valley Geothermal Area",
     "plants": [
       {
@@ -935,6 +940,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Stillwater Geothermal Area",
     "plants": [
       {
@@ -972,6 +978,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Heber Geothermal Area",
     "plants": [
       {
@@ -1109,6 +1116,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Blue Mountain Geothermal Area",
     "plants": [
       {
@@ -1146,6 +1154,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "McGinness Hills",
     "plants": [
       {
@@ -1183,6 +1192,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Patua Phase 1",
     "plants": [
       {
@@ -1220,6 +1230,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Kilauea East Rift Geothermal Area",
     "plants": [
       {
@@ -1282,6 +1293,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Neal Hot Springs Geothermal Area",
     "plants": [
       {
@@ -1319,6 +1331,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "North Brawley Geothermal Area",
     "plants": [
       {
@@ -1356,6 +1369,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Roosevelt Hot Springs Geothermal Area",
     "plants": [
       {
@@ -1418,6 +1432,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Cove Fort Geothermal Area",
     "plants": [
       {
@@ -1455,6 +1470,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Steamboat Springs Geothermal Area",
     "plants": [
       {
@@ -1692,6 +1708,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "East Mesa Geothermal Area",
     "plants": [
       {
@@ -1904,6 +1921,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Salt Wells Geothermal Area",
     "plants": [
       {
@@ -1941,6 +1959,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Tuscarora (Hot Sulphur Springs)",
     "plants": [
       {
@@ -1978,6 +1997,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Wild Rose Geothermal Area",
     "plants": [
       {
@@ -2015,6 +2035,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Beowawe Hot Springs Geothermal Area",
     "plants": [
       {
@@ -2077,6 +2098,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Brady Hot Springs Geothermal Area",
     "plants": [
       {
@@ -2114,6 +2136,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Desert Peak Geothermal Area",
     "plants": [
       {
@@ -2176,6 +2199,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Jersey Valley Geothermal Area",
     "plants": [
       {
@@ -2213,6 +2237,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Long Valley Caldera Geothermal Area",
     "plants": [
       {
@@ -2275,6 +2300,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Thermo Hot Springs Geothermal Area",
     "plants": [
       {
@@ -2312,6 +2338,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Soda Lake Geothermal Area",
     "plants": [
       {
@@ -2374,6 +2401,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Raft River Geothermal Area",
     "plants": [
       {
@@ -2411,6 +2439,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "San Emidio Desert Geothermal Area",
     "plants": [
       {
@@ -2473,6 +2502,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Brady",
     "plants": [
       {
@@ -2510,6 +2540,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Lightning Dock Geothermal Area",
     "plants": [
       {
@@ -2547,6 +2578,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Wabuska I",
     "plants": [
       {
@@ -2584,6 +2616,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Wabuska II",
     "plants": [
       {
@@ -2621,6 +2654,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Amedee Geothermal Area",
     "plants": [
       {
@@ -2658,6 +2692,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Honey Lake",
     "plants": [
       {
@@ -2695,6 +2730,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Wineagle",
     "plants": [
       {
@@ -2732,6 +2768,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Chena Geothermal Area",
     "plants": [
       {
@@ -2769,6 +2806,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "OIT",
     "plants": [
       {
@@ -2806,6 +2844,7 @@ var geoAreas = [
     }
   },
   {
+    "type": "Feature",
     "name": "Florida Canyon Mine",
     "plants": [
       {

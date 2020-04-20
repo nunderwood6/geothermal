@@ -48,10 +48,11 @@ div.title h2 {
 
 div.scrollContainer {
 	margin: 50px 0;
+	position: relative;
 }
 
 article {
-	/*margin-top: -10%;*/
+	margin-top: -10%;
 	position: relative;
 	z-index: 4;
 }
@@ -82,7 +83,7 @@ figure.sticky svg {
 }
 
 div.spacer {
-	height: 70vh;
+	height: 80vh;
 }
 
 div.spacerHalf {
@@ -92,24 +93,6 @@ div.spacerHalf {
 div.map{
 	position: relative;
 }
-
-/*div.stack {
-	position: relative;
-}
-
-div.stack img {
-	width: 100%;
-	height: 100%;
-}
-
-div.stack img.stack {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	opacity: 0;
-}*/
 
 div.map p {
 	font-family: proxima-nova, sans-serif;
@@ -140,8 +123,12 @@ h4 {
 	text-align: center;
 	font-size: 24px;
 	font-weight: normal;
-	text-decoration: underline;
 	margin-top: 25px;
+}
+
+h5 {
+	margin: 0;
+	font-size: 14px;
 }
 
 .firstCharacter {
@@ -167,7 +154,11 @@ h4 {
 .depthText {
 	position: absolute;
 	right: 0;
-	top: 0;
+	z-index: 3;
+	font-family: proxima-nova, sans-serif;
+	font-size: 12px;
+	color: #ccc;
+
 }
 
 .colorScale {
@@ -179,6 +170,7 @@ h4 {
 	top: 7%;
 	padding-right: 0%;
 	z-index: 3;
+	color: #ccc;
 }
 
 .colorScale.depth {
@@ -217,7 +209,35 @@ h4 {
 		height: 8px;
 	}
 
+	div.subhead {
+		top: 65%;
+	}
+}
 
+div.circleLegend {
+	position: absolute;
+	bottom: 5%;
+	right: 3%;
+	z-index: 3;
+	opacity: 0;
+}
+
+div.circleLegend text {
+	font-size: 11px;
+}
+
+div.circleLegend .inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+div.circleLegend p {
+	margin: 0 auto;
+	font-size: 12px;
+	font-family: proxima-nova, sans-serif;
+	padding: 0;
+	text-align: center;
 }
 
 .lineChart {
@@ -233,13 +253,13 @@ h4 {
 
 .lines {
   fill: none;
-  stroke-width: 1.5px;
+  stroke-width: 3px;
   stroke: #ccc;
 }
 
-.line.Geothermal {
+/*.line.Geothermal {
 	stroke-width: 4px;
-}
+}*/
 
 .axis path{
 	stroke: #aaa;
@@ -282,7 +302,7 @@ p.key {
 	margin: 0 auto;
 	padding: 0;
 	font-family: proxima-nova, sans-serif;
-
+	font-size: 14px;
 }
 
 .key b {
@@ -292,4 +312,5 @@ p.key {
 	margin-right: 6px;
 	margin-left: 10px;
 }
+
 

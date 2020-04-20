@@ -127,9 +127,11 @@ var images = depthGroup.selectAll(".stack")
   				  .domain([0,3000])
   				  .range([axisMargins.top,h - axisMargins.bottom]);
 
+  var scaleFactor = w/600;
+
   var rScale = d3.scaleSqrt()
             .domain([0,850])
-            .range([0,30]);
+            .range([0,30*scaleFactor]);
 
   var yAxis = d3.axisRight(yScale)
   					.ticks(5)
@@ -149,7 +151,9 @@ var images = depthGroup.selectAll(".stack")
 
   var depthText = d3.select("figure.map").append("p")
                             .attr("class", "depthText depth")
-                            .html(`Depth: <span class="depthNumber">500</span>m`);
+                            .html(`Depth:<br><span class="depthNumber">500</span>m`)
+                            .style("bottom", h-axisMargins.top-10+"px")
+                            .style("text-align", "right");
 
   function addDiscreteListeners(){
     
@@ -285,6 +289,55 @@ var images = depthGroup.selectAll(".stack")
                       .attr("stroke", "#c9e5f5")
                       .attr("stroke-width", 0.2);
 
+    var legendValues = [100,500,1000];
+    var legendSize = rScale.range()[1]*2.2+20;
+
+    var legendDiv = d3.select("div.circleLegend .inner")
+                                .style("width", legendSize+10+"px")
+                                .style("height", legendSize+"px");
+
+
+    //legend
+    var circleLegend = legendDiv.append("svg")
+                            .attr("width", "100%")
+                            .attr("height", "100%")
+                            .style("position", "absolute")
+                            .style("top", "0px")
+                            .style("left", "0px");
+
+    var circleLegendCircles = circleLegend.selectAll(".legendCircles")
+                            .data(legendValues)
+                            .enter()
+                            .append("circle")
+                                .attr("r", d=>rScale(d))
+                                .attr("cx", legendSize/2)
+                                .attr("cy", d=> legendSize- rScale(d))
+                                .attr("fill", "none")
+                                .attr("stroke", "#c9e5f5")
+                                .attr("stroke-width", 1);
+
+    var legendLines = circleLegend.selectAll(".legendLines")
+                            .data(legendValues)
+                            .enter()
+                            .append("line")
+                                .attr("x1", legendSize/2)
+                                .attr("x2", legendSize+10)
+                                .attr("y1", d=>legendSize - rScale(d)*2)
+                                .attr("y2", d=>legendSize - rScale(d)*2)
+                                .attr("stroke", "#fff")
+                                .attr("stroke-width", 1)
+
+    var legendText = circleLegend.selectAll(".legendText")
+                            .data(legendValues)
+                            .enter()
+                            .append("text")
+                                .text(d=>d)
+                                .attr("x", legendSize-15)
+                                .attr("y", d=>legendSize - rScale(d)*2)
+                                .attr("alignment-baseline", "bottom")
+                                .attr("stroke", "#fff")
+                                .attr("stroke-width", 1)
+
 
     //add utah forge site
     var forgeSite = enhancedGroup.selectAll(".forgeSite")
@@ -308,15 +361,15 @@ var images = depthGroup.selectAll(".stack")
                                   .enter()
                                   .append("text")
                                   .attr("x", function(d){
-                                      return albers(d.geometry.coordinates)[0]+5;
+                                      return albers(d.geometry.coordinates)[0]+3.5;
                                   })
                                     .attr("y", function(d){
-                                        return albers(d.geometry.coordinates)[1]+15;
+                                        return albers(d.geometry.coordinates)[1]+12;
                                   })
                                   .attr("fill", "#fff")
-                                  .attr("font-size", "14px")
+                                  .attr("font-size", "12px")
                                   .text("FORGE site Milton, UT")
-                                  .call(wrapText, 90, 14);
+                                  .call(wrapText, 90, 12);
 
 
 
@@ -336,6 +389,22 @@ var updateChart = {
     w2 = .5*w,
     h2 = .5*h;
 
+    //reset rScale radius down simultaneously
+    var newRange = rScale.range().map(e=>e/2);
+    console.log(newRange);
+    rScale.range(newRange);
+
+    plantsGroup.selectAll("circle").transition("shrink").duration(2000)
+                .attr("r", function(d){
+                        var totalMW= 0;
+                        for(var plant of d.plants){
+                            totalMW+=plant.properties["CAP_MW"];
+                        }
+                        console.log(rScale(totalMW));
+                        return rScale(totalMW);
+                      });
+
+
     svg.transition("zoom in!").duration(2000).attr("viewBox", `${l} ${t} ${w2} ${h2}`);
   },
   addDeveloping: function(){
@@ -351,6 +420,20 @@ var updateChart = {
   zoomOut: function(){
     console.log("zoom out!");
     svg.transition("zoom out!").duration(2000).attr("viewBox", `0 0 ${w} ${h}`);
+
+    //reset rScale radius down simultaneously
+    var newRange = rScale.range().map(e=>e*2);
+    rScale.range(newRange);
+
+    plantsGroup.selectAll("circle").transition("grow").duration(2000)
+                .attr("r", function(d){
+                        var totalMW= 0;
+                        for(var plant of d.plants){
+                            totalMW+=plant.properties["CAP_MW"];
+                        }
+                        console.log(rScale(totalMW));
+                        return rScale(totalMW);
+                      });
   },
   fadeInDepth: function(){
     console.log("fade in depth!");
@@ -358,6 +441,11 @@ var updateChart = {
     plantsGroup.transition("fadeOut")
               .duration(1000)
               .attr("opacity", 0);
+    //fade out circle legend
+    d3.select("div.circleLegend")
+              .transition("fadeOut")
+              .duration(1000)
+              .style("opacity", 0);
     //fade in depth group
     depthGroup.transition("fadeIn")
             .duration(1000)
@@ -380,6 +468,11 @@ var updateChart = {
     plantsGroup.transition("fadeIn")
               .duration(1000)
               .attr("opacity", 1);
+    //fade in circle legend
+    d3.select("div.circleLegend")
+              .transition("fadeIn")
+              .duration(1000)
+              .style("opacity", 1);
     //fade out depth group
     depthGroup.transition("fadeOut")
             .duration(1000)
@@ -404,6 +497,11 @@ var updateChart = {
     plantsGroup.transition("fadeOut")
               .duration(1000)
               .attr("opacity", 0);
+    //fade out circle legend
+    d3.select("div.circleLegend")
+              .transition("fadeOut")
+              .duration(1000)
+              .style("opacity", 0);
     //fade in EGS
     enhancedGroup.transition("fadeIn")
               .duration(1000)
@@ -424,6 +522,11 @@ var updateChart = {
     plantsGroup.transition("fadeIn")
               .duration(1000)
               .attr("opacity", 1);
+    //fade in circle legend
+    d3.select("div.circleLegend")
+              .transition("fadeIn")
+              .duration(1000)
+              .style("opacity", 1);
     //fade out EGS
     enhancedGroup.transition("fadeout")
               .duration(1000)
@@ -494,18 +597,6 @@ function update(){
 
   d3.select(".depthMarker").attr("transform", `translate(${w-axisMargins.right-6},${yScale(currentDepth)-6})`);
   d3.select(".depthNumber").html(Math.round(currentDepth))
-
-  // //fly from origin to centroids
-  // stateCentroids.attr("cx", function(d){
-  //     var x2 = d3.select(this).attr("x2");
-  //     var x = x2*percent;
-  //     return x;
-  // }).attr("cy", function(d){
-  //     var y2 = d3.select(this).attr("y2");
-  //     var y = y2*percent;
-  //     return y;
-  // });
-
 
 }
 var listening;
@@ -605,7 +696,7 @@ function drawLineChart(data,config) {
     var valueColumn = "amt";
 
     var aspectWidth = 16;
-    var aspectHeight = 7;
+    var aspectHeight = 9;
 
     var annotationWidth = 75,
     annotationLineHeight = 12;
@@ -683,10 +774,10 @@ function drawLineChart(data,config) {
     .scaleOrdinal()
     .domain(formatted.map(d => d.name))
     .range([
-      "#4e9c6f",
+      "#4ddb8d",
       "#d6d451",
-      "#4d71a1",
-      "#f2362c"
+      "#4d93dd",
+      "#793dd9"
     ]);
 
   var chartElement = d3.select(config.target)
@@ -861,7 +952,7 @@ d3.csv("data/2019_energy.csv").then(function(data){
             .attr("y", 15)
             .attr("width", Math.sqrt(chartW*chartW* 16/ 4118))
             .attr("height", Math.sqrt(chartW*chartW* 16/ 4118))
-            .attr("fill", "red");
+            .attr("fill", "#793dd9");
 
   d3.select("div.chart")
                 .append("p")
