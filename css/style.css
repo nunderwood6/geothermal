@@ -51,17 +51,22 @@ div.scrollContainer {
 }
 
 article {
+	/*margin-top: -10%;*/
 	position: relative;
 	z-index: 4;
 }
 
 .step {
-	margin: 200px auto;
+	margin: 0 auto;
 	/*text-align: center;*/
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 5px;
 	max-width: 650px;
 	padding: 5px;
+}
+
+.step.temperature {
+	opacity: 0;
 }
 
 figure.sticky {
@@ -77,7 +82,11 @@ figure.sticky svg {
 }
 
 div.spacer {
-	height: 60vh;
+	height: 70vh;
+}
+
+div.spacerHalf {
+	height: 20vh;
 }
 
 div.map{
@@ -167,7 +176,7 @@ h4 {
 	left: 0;
 	right: 0;
 	margin: auto;
-	top: 3%;
+	top: 7%;
 	padding-right: 0%;
 	z-index: 3;
 }
@@ -232,10 +241,13 @@ h4 {
 	stroke-width: 4px;
 }
 
+.axis path{
+	stroke: #aaa;
+}
+
 .tick text{
 	font-size: 12px;
-	fill: #ddd;
-	font-weight: bold;
+	fill: #aaa;
 }
 
 .value text {
@@ -269,6 +281,8 @@ p.key {
 	width: fit-content;
 	margin: 0 auto;
 	padding: 0;
+	font-family: proxima-nova, sans-serif;
+
 }
 
 .key b {
