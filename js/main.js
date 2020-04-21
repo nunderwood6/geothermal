@@ -851,12 +851,6 @@ function drawLineChart(data,config) {
   var xAxis = d3
     .axisBottom()
     .scale(xScale)
-    // .tickValues([new Date(1970,0,1),
-    //              new Date(1980,0,1),
-    //              new Date(1990,0,1),
-    //              new Date(2000,0,1),
-    //              new Date(2010,0,1),
-    //              new Date(2020,0,1)])
     .tickFormat(function(d, i) {
       if (isMobile) {
         return "\u2019" + fmtYearAbbrev(d);
@@ -869,9 +863,6 @@ function drawLineChart(data,config) {
     .axisLeft()
     .scale(yScale)
     .ticks(ticksY);
-    // .tickFormat(function(d){
-    //   return d == 0 ? 0 : (d / 1000000000).toFixed(0) + "B";
-    // });
 
   /*
    * Render axes to chart.
@@ -973,66 +964,6 @@ function drawLineChart(data,config) {
 
 
     }
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////
-//////////////////1)Geothermal Production Chart///////////////////////////////
-//////////////////////////////////////////////////////////////////////
-
-// var chartDivW = $("div.chart").width();
-// $("div.chart").height(chartDivW);
-
-// var chartSvg = d3.select("div.chart").append("svg")                                     
-//               .attr("width",  "100%")
-//               .attr("height", "100%")
-//               .style("position", "absolute")
-//               .style("top", "0px")
-//               .style("left", "0px")
-//               .style("z-index", "1");;
-
-// var chartW = chartDivW - 30;
-
-// //get data
-// d3.csv("data/2019_energy.csv").then(function(data){
-
-//   chartSvg.append("rect")
-//             .attr("x", 15)
-//             .attr("y", 15)
-//             .attr("width", chartW)
-//             .attr("height", chartW)
-//             .attr("fill", "#777");
-
-//   chartSvg.append("rect")
-//             .attr("x", 15)
-//             .attr("y", 15)
-//             .attr("width", Math.sqrt(chartW*chartW* 16/ 4118))
-//             .attr("height", Math.sqrt(chartW*chartW* 16/ 4118))
-//             .attr("fill", "#793dd9");
-
-//   d3.select("div.chart")
-//                 .append("p")
-//                 .html("Total U.S. Electricity Production")
-//                 .style("text-align", "center")
-//                 .style("position", "relative")
-//                 .style("width", "90%")
-//                 .style("padding-top", "45%")
-//                 .style("z-index", "5");
-
-//   d3.select("div.chart")
-//                 .append("p")
-//                 .html("Geothermal")
-//                 .style("position", "absolute")
-//                 .style("z-index", "5")
-//                 .style("padding", "0px")
-//                 .style("left", 15 + Math.sqrt(chartW*chartW* 16/ 4118) + 5 + "px")
-//                 .style("top", 15 +"px");
-
-// });
-
-
 
 }
 window.onload = wrapper();
