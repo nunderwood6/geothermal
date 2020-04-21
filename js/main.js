@@ -186,16 +186,8 @@ var images = depthGroup.selectAll(".stack")
     ])
     .then(function([boxJSON,states_topoJSON,operatingJSON,forgeJSON]){
 
-      // console.log(geoAreas);
-
     	var box = boxJSON.features;
     	var states = topojson.feature(states_topoJSON, states_topoJSON.objects.states).features;
-      // var geoAreas = geoAreas.sort(function(a,b){
-      //     return b.properties["CAP_MW"] - a.properties["CAP_MW"];
-      // });
-      // var developingGeoAreas = developingGeoAreas.sort(function(a,b){
-      //     return b.properties["CAP_MW"] - a.properties["CAP_MW"];
-      // });
       var forge = forgeJSON.features;
 
       var geothermalStates = ["CA","ID","NM","NV","OR","UT"];
@@ -270,23 +262,20 @@ var images = depthGroup.selectAll(".stack")
                             return d.properties["postal"];
                         })
 
+      //sort so smaller circles draw on top
+      geoAreas.sort(function(a,b){
+          var bValues = b.plants.map(i=>i.properties["CAP_MW"])
+          var aValues = a.plants.map(i=>i.properties["CAP_MW"])
+          return d3.sum(bValues) - d3.sum(aValues);
+      });
 
-            console.log(geoAreas);
-
-            geoAreas.sort(function(a,b){
-                var bValues = b.plants.map(i=>i.properties["CAP_MW"])
-                var aValues = a.plants.map(i=>i.properties["CAP_MW"])
-                return d3.sum(bValues) - d3.sum(aValues);
-            });
-
-            developingGeoAreas.sort(function(a,b){
-                var bValues = b.plants.map(i=>i.properties["CAP_MW"])
-                var aValues = a.plants.map(i=>i.properties["CAP_MW"])
-                return d3.sum(bValues) - d3.sum(aValues);
-            });
+      developingGeoAreas.sort(function(a,b){
+          var bValues = b.plants.map(i=>i.properties["CAP_MW"])
+          var aValues = a.plants.map(i=>i.properties["CAP_MW"])
+          return d3.sum(bValues) - d3.sum(aValues);
+      });
 
             
-		
       var geoAreaSymbols = plantsGroup.append("g")
                     .attr("class", "operatingGroup")
                     .selectAll(".operating")
@@ -306,6 +295,7 @@ var images = depthGroup.selectAll(".stack")
                         for(var plant of d.plants){
                             totalMW+=plant.properties["CAP_MW"];
                         }
+                        console.log(totalMW);
                         return rScale(totalMW);
                       })
                       .attr("fill", "#5d95b3")
@@ -992,55 +982,55 @@ function drawLineChart(data,config) {
 //////////////////1)Geothermal Production Chart///////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-var chartDivW = $("div.chart").width();
-$("div.chart").height(chartDivW);
+// var chartDivW = $("div.chart").width();
+// $("div.chart").height(chartDivW);
 
-var chartSvg = d3.select("div.chart").append("svg")                                     
-              .attr("width",  "100%")
-              .attr("height", "100%")
-              .style("position", "absolute")
-              .style("top", "0px")
-              .style("left", "0px")
-              .style("z-index", "1");;
+// var chartSvg = d3.select("div.chart").append("svg")                                     
+//               .attr("width",  "100%")
+//               .attr("height", "100%")
+//               .style("position", "absolute")
+//               .style("top", "0px")
+//               .style("left", "0px")
+//               .style("z-index", "1");;
 
-var chartW = chartDivW - 30;
+// var chartW = chartDivW - 30;
 
-//get data
-d3.csv("data/2019_energy.csv").then(function(data){
+// //get data
+// d3.csv("data/2019_energy.csv").then(function(data){
 
-  chartSvg.append("rect")
-            .attr("x", 15)
-            .attr("y", 15)
-            .attr("width", chartW)
-            .attr("height", chartW)
-            .attr("fill", "#777");
+//   chartSvg.append("rect")
+//             .attr("x", 15)
+//             .attr("y", 15)
+//             .attr("width", chartW)
+//             .attr("height", chartW)
+//             .attr("fill", "#777");
 
-  chartSvg.append("rect")
-            .attr("x", 15)
-            .attr("y", 15)
-            .attr("width", Math.sqrt(chartW*chartW* 16/ 4118))
-            .attr("height", Math.sqrt(chartW*chartW* 16/ 4118))
-            .attr("fill", "#793dd9");
+//   chartSvg.append("rect")
+//             .attr("x", 15)
+//             .attr("y", 15)
+//             .attr("width", Math.sqrt(chartW*chartW* 16/ 4118))
+//             .attr("height", Math.sqrt(chartW*chartW* 16/ 4118))
+//             .attr("fill", "#793dd9");
 
-  d3.select("div.chart")
-                .append("p")
-                .html("Total U.S. Electricity Production")
-                .style("text-align", "center")
-                .style("position", "relative")
-                .style("width", "90%")
-                .style("padding-top", "45%")
-                .style("z-index", "5");
+//   d3.select("div.chart")
+//                 .append("p")
+//                 .html("Total U.S. Electricity Production")
+//                 .style("text-align", "center")
+//                 .style("position", "relative")
+//                 .style("width", "90%")
+//                 .style("padding-top", "45%")
+//                 .style("z-index", "5");
 
-  d3.select("div.chart")
-                .append("p")
-                .html("Geothermal")
-                .style("position", "absolute")
-                .style("z-index", "5")
-                .style("padding", "0px")
-                .style("left", 15 + Math.sqrt(chartW*chartW* 16/ 4118) + 5 + "px")
-                .style("top", 15 +"px");
+//   d3.select("div.chart")
+//                 .append("p")
+//                 .html("Geothermal")
+//                 .style("position", "absolute")
+//                 .style("z-index", "5")
+//                 .style("padding", "0px")
+//                 .style("left", 15 + Math.sqrt(chartW*chartW* 16/ 4118) + 5 + "px")
+//                 .style("top", 15 +"px");
 
-});
+// });
 
 
 

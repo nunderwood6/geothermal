@@ -119,11 +119,11 @@ h3 {
 
 h4 {
 	max-width: 650px;
-	margin: 0 auto;
+	margin: 35px auto 10px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: normal;
-	margin-top: 25px;
+	text-decoration: underline;
 }
 
 h5 {
@@ -244,6 +244,7 @@ div.circleLegend p {
 	margin: 25px auto;
 	max-width: 650px;
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 .lineChart svg {

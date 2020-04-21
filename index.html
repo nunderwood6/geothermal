@@ -28,10 +28,8 @@
 
         <p><span class="firstCharacter">S</span>everal kilometers below where you’re sitting right now, the rock is hot enough to boil water. Brimming just below the surface of the Earth is a virtually inexhaustible supply of clean energy, produced by the decay of radioactive elements in the crust. Why is such an obvious source of energy still untapped? Why is geothermal energy so underground it’s been called "<a href=" https://www.npr.org/2018/02/04/582132168/the-forgotten-renewable-geothermal-energy-production-heats-up">the forgotten renewable</a>"?</p>
 
+        <p>Historically, one of the greatest factors limiting geothermal development has been limited site viability. Conventional geothermal energy production requires the geographic convergence of three elements: heat, fluid, and permeability at depth. Since the concurrence of these ingredients is relatively rare, development has been limited to isolated hotspots. Near the surface, the temperature of the Earth's crust increases about 25°C per kilometer, but in some places this heat gradient is much steeper. A number of hotspots have been developed for geothermal production in the western United States. The following map shows estimates of temperature at 500 meters below the surface.</p>
 
-        <p>Near the surface, the temperature of the crust increases about 25°C per kilometer. Yet there’s a lot of geographic variation: some places, the Earth heats up much faster. In the Western U.S., the subduction of the Pacific plate produces signficant amounts of heat. The map shows estimates of temperature at 500 meters below the surface.</p>
-
-            
 
         <div class="scrollContainer">
             
@@ -45,6 +43,7 @@
                  </div>
 
                  <div class="colorScale enhanced">
+                    <h5>EGS Resource Potential</h5>
                     <p>Low</p>
                     <img src="img/viridis.png"></img>
                     <p>High</p>
@@ -61,7 +60,7 @@
             <article class="textContainer">
 
                 <div class="step">
-                    <p>Though the West is hotter, temperature increases across the board as we descend deeper.</p>
+                    <p>Though the western states heat up faster, temperature rapidly increases with depth across the whole country.</p>
                 </div>
 
                 <div class="spacerHalf"></div>
@@ -73,61 +72,59 @@
                 <div class="spacer"></div>
 
                 <div class="step">
-                    <p>At only three kilometers below the surface, broad swaths of the west are over 200°C. Existing geothermal plants are concentrated in the western states. </p>
+                    <p>At only three kilometers below the surface, many locations in the West are hotter than 200°C. Existing geothermal energy development in the U.S. is concentrated in five western states.</p>
                 </div>
 
                 <div class="spacer"></div>
 
 
                 <div class="discrete step" forward='fadeOutDepth' backward='fadeInDepth'>
-                    <p>Conventional geothermal development requires three phenomena to occur in one place: heat, permeability, and water. In order to produce electricity, we drill wells, then draw liquid through the rocks to produce steam and turn turbines. Since the geographic coincidence of these three requirements is very limited, geothermal development in the U.S. has been limited to several hotspots in the west.</p>
+                    <p>Our conventional geothermal plants occur are built where heat coincides with naturally occuring fluid and permeability. Steam or hot water is piped to the surface through drilled wells, then used to power turbines that generate electricity. Each circle on the map represents an area of geothermal development, sized by its installed capacity in megawatts(MW).</p>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div class="discrete step" forward='zoomToOperating' backward='zoomOut'>
-                    <p>Even with these limitations, geothermal has been making gains. The Geysers area north of San Francisco is the largest geothermal producer in the world, and total production was projected to double in 2014.</p>
+                    <p> The Geysers area, located north of San Francisco, is the world's largest dry-steam geothermal field. In 2014, the total installed capacity of all operating geothermal plants listed by the National Renewable Energy Lab(NREL) was over 2,300MW, the most of any country worldwide.</p>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div class="discrete step" forward='addDeveloping' backward='removeDeveloping'>
-                    <p>Look at all these new geothermal power plants in the works.</p>
+                    <p>In addition, NREL catalogued a large number of projects representing nearly 4,000MW of capacity under development in 2014. The advent of a new approach called enhanced geothermal systems(EGS) means that many more sites may become viable in the near future.</p>
                 </div>
 
                 <div class="spacer"></div>
 
                 <div class="discrete step" forward='fadeInEGS' backward='fadeOutEGS'>
-                    <p>The advent of a new approach called enhanced geothermal systems(EGS) means that many more areas may become viable in the near future. EGS overcomes the limitations of traditional geothermal by injecting liquid via wells, increasing the permeability. In principle this is similar to the way fracking works. There are some concerns about induced seismicity.</p>
+                    <p> EGS overcomes some of the limitations of conventional geothermal by creating man-made reservoirs, injecting fluid into the subsurface via wells in order to increase permeability. Research and development of EGS systems is ongoing in several locations, including the U.S. Department of Energy's FORGE site in Utah.</p>
                 </div>
 
-                <div class="spacer"></div>
+                <div style="height:102vh" class="spacer"></div>
 
             </article>
 
         </div>
 
-        <p><span class="firstCharacter">S</span>till, for right now geothermal lags behind wind and solar. There are several valid reasons for this. One is the high fixed capital required to build geothermal plants.</p>
+        <p><span class="firstCharacter">D</span>espite the promise of EGS and the leadership of the United States in research and development, geothermal has lagged behind wind and solar in both production and publicity. One reason for the relatively slow growth of geothermal is the large amount of capital needed for development. According to the International Renewable Energy Agency(IRENA), the cost of installation for geothermal remains about double that of wind, solar, and hydropower. The following chart illustrates how the cost of installation for renewables flucuated from 2010-2018, in US dollars per kilowatt. </p>
 
-<!--         <h4 class="chartTitle">Total Installed Cost</h4>
- -->
+        <h4 class="chartTitle">Installed Cost, US Dollars/Kilowatt 2018 </h4>
+
         <p class="key installed"></p>
 
         <div class="lineChart installed"></div>
 
-        <p>But over the lifetime of the project, geothermal is highly competititve.</p>
+        <p>Though the upfront cost of installation remains high, geothermal is extremely efficient once it's installed. If we take into consideration costs over the entire lifespan of a project, geothermal is extremely competetive with the other renewables. The next chart outlines the levelized cost of energy(LCOE) for each renewable from 2010-2018, again with data from IRENA.</p>
 
-<!--         <h4 class="chartTitle">LCOE</h4>
- -->
+        <h4 class="chartTitle">Levelized Cost of Energy, US Dollars/Kilowatt Hour 2018</h4>
+
         <p class="key lcoe"></p>
 
         <div class="lineChart lcoe"></div>
 
-        <p>Site identification and development are significant challenges for geothermal. Yet EGS means that the future is bright. And geothermal is superior to solar and wind in a couple ways. One, that the energy supply is constant, 24/7/365. Second is that geothermal is less expensive in terms of the land necessary- you don’t need sprawling amounts of land and the development is mostly underground.</p>
+        <p>Though geothermal has lagged behind wind and solar in installed capacity, it is superior in several ways. Geothermal power plants have the capacity to operate around the clock, providing a reliable baseline source of clean energy. In addition, geothermal doesn't need sprawling tracts of land like wind and solar farms do, since most development occurs underground. </p>
 
-        <div class="chart"></div>
-
-        <p>Right now, geothermal is only a tiny fraction of total energy production in the United States. But researchers estimate EGS could provide 100GW of viable energy production, increasing the total by a factor of 40.</p>
+        <p>Right now, geothermal produces only 0.4% of total energy production in the United States. But researchers estimate EGS technology could expand our economically viable resources to 100GW, ballooning current production by a factor of 40. Geothermal has the potential to play a critical role in our transition to clean energy sources.</p>
 
         
         <h6 style="font-weight: normal; text-decoration: underline; text-align: center; font-size: 24px; max-width: 650px; margin: 20px auto 0px;">Data Sources</h6>
@@ -135,12 +132,10 @@
             
             <!-- Central estimate of total accessible resource in GWh at 300-3000 m below ground surface -->
             <li>-<b>Estimated Temperature At Depth and EGS Resource Potential</b>: <a>"An Estimate of Shallow Low-Temperature Geothermal Resources of the US"</a>; Mullane, M. et al, National Renewable Energy Laboratory (2016)</li>
-            <li>-<b>Operating & Developing Geothermal Plants</b>: <a href="https://www.nrel.gov/gis/geothermal.html">National Renewable Energy Laboratory</a>2014</li>
-            <li>-<b>Solar, Wind, and Geothermal Energy Production</b></li>
-            <li>-<b>Hillshade, State & Country Boundaries</b>: Natural Earth</li>
+            <li>-<b>Operating & Developing Geothermal Plants</b>: <a href="https://www.nrel.gov/gis/geothermal.html">National Renewable Energy Laboratory</a> 2014</li>
+            <li>-<b>State & Country Boundaries, Hillshade</b>: <a href="https://www.naturalearthdata.com/">Natural Earth</a></li>
+            <li>-<b>Renewable Energy Development Cost and LCOE</b>: <a href="https://www.irena.org/publications/2019/May/Renewable-power-generation-costs-in-2018">International Renewable Energy Agency</a></li>
             <li>-<b>U.S. Electricity Generation</b>: <a href="https://www.eia.gov/tools/faqs/faq.php?id=427&t=3">U.S. Energy Information Administration 2019</a></li>
-            <li><b>Additional Sources</b>: <a href="https://www.npr.org/2018/02/04/582132168/the-forgotten-renewable-geothermal-energy-production-heats-up
-">NPR</a></li>
         </ul>
 
         <script src="lib/helpers/wrapText.js"></script>
